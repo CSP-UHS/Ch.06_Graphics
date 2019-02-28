@@ -14,7 +14,30 @@ Then add a comment at the top telling the reader what you are drawing.
 After you have showed your picture to your instructor, screenshot your picture,
 name it firstname_lastname.jpg and use the submit button to e-mail it to your instructor
 '''
-
-
-
-
+import arcade,random
+x = 250
+y = 250
+curve = 5
+scale = 25
+color = 84
+curve_2 = 8
+arcade.open_window(500,500,"Picasso Project") #Creates the window
+arcade.set_background_color(arcade.color.MAGENTA_HAZE)
+arcade.start_render()
+for i in range(5):
+    for i in range(20):
+        arcade.draw_circle_filled(x,y,scale,(color,48,1))
+        x += curve_2
+        y += curve
+        curve += .5
+        scale -= 1
+        color += 9
+    x = 250
+    y = 250
+    color = 50
+    curve = 5
+    curve_2 -= 4
+    scale = 25
+arcade.draw_text("Gamers",145,50,arcade.color.RED_DEVIL,50)
+arcade.finish_render()
+arcade.run()
