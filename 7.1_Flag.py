@@ -10,5 +10,12 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
-arcade.open_window(450,260, "The Stars and Stripes")
+arcade.open_window(494, 260, "The Stars and Stripes")
+arcade.set_background_color((255,255,255))
+arcade.start_render()
+arcade.draw_lrtb_rectangle_filled(0, 198, 260, 140, (00,85,155))
+for y_offset in range(0, 494, 20):
+    arcade.draw_rectangle_filled(494, 0, 50, 0 + y_offset, (255,0,0))
+arcade.finish_render()
+
 arcade.run()
