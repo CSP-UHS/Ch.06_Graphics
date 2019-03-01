@@ -13,9 +13,11 @@ import arcade
 arcade.open_window(494, 260, "The Stars and Stripes")
 arcade.set_background_color((255,255,255))
 arcade.start_render()
-arcade.draw_lrtb_rectangle_filled(0, 198, 260, 140, (00,85,155))
-for y_offset in range(0, 494, 20):
-    arcade.draw_rectangle_filled(494, 0, 50, 0 + y_offset, (255,0,0))
+for y_offset in range(10, 500, 40):
+    arcade.draw_rectangle_filled(0, 0 + y_offset, 20, 988, (255, 0, 0), 90)
+arcade.draw_lrtb_rectangle_filled(0, 218, 260, 120, (00, 85, 155))
+for stars in range(218, 120, 15):
+    arcade.draw_text("*  *  *  *  *  *", 10, 233, (255, 255, 255), 28)
+    arcade.draw_text("*  *  *  *  *", 27, 217, (255, 255, 255), 28)
 arcade.finish_render()
-
 arcade.run()
