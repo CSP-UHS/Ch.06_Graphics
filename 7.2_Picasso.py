@@ -14,7 +14,15 @@ Then add a comment at the top telling the reader what you are drawing.
 After you have showed your picture to your instructor, screenshot your picture,
 name it firstname_lastname.jpg and use the submit button to e-mail it to your instructor
 '''
+import arcade
+arcade.open_window(700, 300, "Train Tracks")
+arcade.set_background_color((135, 206, 250))  # Sky Blue
 
-
+arcade.start_render()
+arcade.draw_lrtb_rectangle_filled(0, 700, 100, 90, arcade.color.GRAY)
+for x_offset in range(0, 700, 30):
+    arcade.draw_rectangle_filled(0+x_offset, 60, 0, 10, arcade.color.BROWN_NOSE)
+arcade.finish_render()
+arcade.run()
 
 
