@@ -19,10 +19,20 @@ arcade.open_window(700, 300, "Train Tracks")
 arcade.set_background_color((135, 206, 250))  # Sky Blue
 
 arcade.start_render()
-arcade.draw_lrtb_rectangle_filled(0, 700, 100, 90, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(0, 700, 65, 0, arcade.color.GHOST_WHITE)  # Ground
+
+arcade.draw_lrtb_rectangle_filled(0, 700, 75, 65, arcade.color.GRAY)  # Tracks
 for x_offset in range(0, 700, 30):
-    arcade.draw_rectangle_filled(0+x_offset, 60, 0, 10, arcade.color.BROWN_NOSE)
+    arcade.draw_rectangle_filled(0 + x_offset, 60, 20, 10, arcade.color.BROWN_NOSE)
+
+arcade.draw_circle_outline(350, 117, 40, arcade.color.BROWN_NOSE, 5)  # Wheels
+arcade.draw_circle_outline(250, 117, 40, arcade.color.BROWN_NOSE, 5)
+for wheel_spokes in range(0, 180, 30):
+    arcade.draw_rectangle_filled(350, 117, 5, 80, arcade.color.BROWN_NOSE, 0 + wheel_spokes)
+for wheel_spokes in range(0, 180, 30):
+    arcade.draw_rectangle_filled(250, 117, 5, 80, arcade.color.BROWN_NOSE, 0 + wheel_spokes)
+arcade.draw_circle_filled(450, 95, 20, arcade.color.BROWN_NOSE)
+arcade.draw_circle_filled(550, 95, 20, arcade.color.BROWN_NOSE)
+
 arcade.finish_render()
 arcade.run()
-
-
