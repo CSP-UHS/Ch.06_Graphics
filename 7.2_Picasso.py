@@ -25,14 +25,29 @@ arcade.draw_lrtb_rectangle_filled(0, 700, 75, 65, arcade.color.GRAY)  # Tracks
 for x_offset in range(0, 700, 30):
     arcade.draw_rectangle_filled(0 + x_offset, 60, 20, 10, arcade.color.BROWN_NOSE)
 
+arcade.draw_lrtb_rectangle_filled(205, 550, 207, 117, arcade.color.BLACK)  # Main Body
+while x in range(206, 549, 69):
+
+arcade.draw_lrtb_rectangle_filled(425, 560, 118, 90, arcade.color.BLACK)
+
 arcade.draw_circle_outline(350, 117, 40, arcade.color.BROWN_NOSE, 5)  # Wheels
 arcade.draw_circle_outline(250, 117, 40, arcade.color.BROWN_NOSE, 5)
 for wheel_spokes in range(0, 180, 30):
-    arcade.draw_rectangle_filled(350, 117, 5, 80, arcade.color.BROWN_NOSE, 0 + wheel_spokes)
+    arcade.draw_rectangle_filled(350, 117, 5, 80, arcade.color.BROWN_NOSE, 8 + wheel_spokes)
 for wheel_spokes in range(0, 180, 30):
-    arcade.draw_rectangle_filled(250, 117, 5, 80, arcade.color.BROWN_NOSE, 0 + wheel_spokes)
+    arcade.draw_rectangle_filled(250, 117, 5, 80, arcade.color.BROWN_NOSE, 8 + wheel_spokes)
 arcade.draw_circle_filled(450, 95, 20, arcade.color.BROWN_NOSE)
 arcade.draw_circle_filled(550, 95, 20, arcade.color.BROWN_NOSE)
+
+arcade.draw_circle_filled(346, 147, 8, arcade.color.GRAY)  # Wheel Bar
+arcade.draw_circle_filled(246, 147, 8, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(246, 346, 153, 143, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(453, 471, 118, 108, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(470, 530, 130, 95, arcade.color.GOLD)
+arcade.draw_rectangle_filled(400, 130, 120, 10, arcade.color.GRAY, -18)
+arcade.draw_circle_filled(453, 113, 8, arcade.color.GRAY)
+
+arcade.draw_lrtb_rectangle_filled(205, 305, 247, 160, arcade.color.LIGHT_BROWN)  # Conductors Box
 
 arcade.finish_render()
 arcade.run()
