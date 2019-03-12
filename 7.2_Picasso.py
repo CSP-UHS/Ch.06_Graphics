@@ -14,6 +14,7 @@ Then add a comment at the top telling the reader what you are drawing.
 After you have showed your picture to your instructor, screenshot your picture,
 name it firstname_lastname.jpg and use the submit button to e-mail it to your instructor
 '''
+x = 305
 import arcade
 arcade.open_window(700, 300, "Train Tracks")
 arcade.set_background_color((135, 206, 250))  # Sky Blue
@@ -25,10 +26,16 @@ arcade.draw_lrtb_rectangle_filled(0, 700, 75, 65, arcade.color.GRAY)  # Tracks
 for x_offset in range(0, 700, 30):
     arcade.draw_rectangle_filled(0 + x_offset, 60, 20, 10, arcade.color.BROWN_NOSE)
 
-arcade.draw_lrtb_rectangle_filled(205, 550, 207, 117, arcade.color.BLACK)  # Main Body
-while x in range(206, 549, 69):
-
-arcade.draw_lrtb_rectangle_filled(425, 560, 118, 90, arcade.color.BLACK)
+arcade.draw_lrtb_rectangle_filled(205, 360, 117, 100, arcade.color.GRAY)  # Main Body
+arcade.draw_lrtb_rectangle_filled(205, 550, 207, 117, arcade.color.BLACK)
+arcade.draw_ellipse_filled(550, 162, 15, 45, arcade.color.BLACK)
+while x <= 550:
+    arcade.draw_rectangle_filled(x, 162, 4, 90, arcade.color.GOLD)
+    x += 81
+arcade.draw_lrtb_rectangle_filled(425, 560, 118, 90, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(500, 540, 247, 207, arcade.color.BLACK)
+point_list = ((520, 200), (485, 270,), (555, 270))
+arcade.draw_polygon_filled(point_list, arcade.color.BLACK)
 
 arcade.draw_circle_outline(350, 117, 40, arcade.color.BROWN_NOSE, 5)  # Wheels
 arcade.draw_circle_outline(250, 117, 40, arcade.color.BROWN_NOSE, 5)
@@ -44,6 +51,7 @@ arcade.draw_circle_filled(246, 147, 8, arcade.color.GRAY)
 arcade.draw_lrtb_rectangle_filled(246, 346, 153, 143, arcade.color.GRAY)
 arcade.draw_lrtb_rectangle_filled(453, 471, 118, 108, arcade.color.GRAY)
 arcade.draw_lrtb_rectangle_filled(470, 530, 130, 95, arcade.color.GOLD)
+arcade.draw_ellipse_filled(530, 112.5, 5, 17.5, arcade.color.GOLD)
 arcade.draw_rectangle_filled(400, 130, 120, 10, arcade.color.GRAY, -18)
 arcade.draw_circle_filled(453, 113, 8, arcade.color.GRAY)
 
