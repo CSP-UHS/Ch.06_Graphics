@@ -26,7 +26,7 @@ arcade.draw_lrtb_rectangle_filled(0, 700, 75, 65, arcade.color.GRAY)  # Tracks
 for x_offset in range(0, 700, 30):
     arcade.draw_rectangle_filled(0 + x_offset, 60, 20, 10, arcade.color.BROWN_NOSE)
 
-arcade.draw_lrtb_rectangle_filled(205, 360, 117, 100, arcade.color.GRAY)  # Main Body
+arcade.draw_lrtb_rectangle_filled(0, 360, 117, 100, arcade.color.GRAY)  # Main Body
 arcade.draw_lrtb_rectangle_filled(205, 550, 207, 117, arcade.color.BLACK)
 arcade.draw_ellipse_filled(550, 162, 15, 45, arcade.color.BLACK)
 while x <= 550:
@@ -36,6 +36,9 @@ arcade.draw_lrtb_rectangle_filled(425, 560, 118, 90, arcade.color.GRAY)
 arcade.draw_lrtb_rectangle_filled(500, 540, 247, 207, arcade.color.BLACK)
 point_list = ((520, 200), (485, 270,), (555, 270))
 arcade.draw_polygon_filled(point_list, arcade.color.BLACK)
+arcade.draw_lrtb_rectangle_filled(405, 445, 227, 207, arcade.color.BLACK)
+arcade.draw_circle_filled(425, 227, 20, arcade.color.BLACK)
+arcade.draw_ellipse_filled(565, 162, 2, 15, arcade.color.GHOST_WHITE)
 
 arcade.draw_circle_outline(350, 117, 40, arcade.color.BROWN_NOSE, 5)  # Wheels
 arcade.draw_circle_outline(250, 117, 40, arcade.color.BROWN_NOSE, 5)
@@ -56,6 +59,21 @@ arcade.draw_rectangle_filled(400, 130, 120, 10, arcade.color.GRAY, -18)
 arcade.draw_circle_filled(453, 113, 8, arcade.color.GRAY)
 
 arcade.draw_lrtb_rectangle_filled(205, 305, 247, 160, arcade.color.LIGHT_BROWN)  # Conductors Box
+arcade.draw_lrtb_rectangle_filled(205, 305, 250, 227, arcade.color.BROWN_NOSE)
+arcade.draw_lrtb_rectangle_filled(215, 245, 217, 172, (135, 206, 250))
+arcade.draw_lrtb_rectangle_filled(260, 290, 217, 172, (135, 206, 250))
+
+arcade.draw_lrtb_rectangle_filled(0, 165, 207, 117, arcade.color.LIGHT_BROWN)  # Coal train
+arcade.draw_circle_filled(20, 95, 20, arcade.color.BROWN_NOSE)
+arcade.draw_circle_filled(140, 95, 20, arcade.color.BROWN_NOSE)
+arcade.draw_circle_filled(80, 95, 20, arcade.color.BROWN_NOSE)
+arcade.draw_lrtb_rectangle_filled(0, 165, 110, 85, arcade.color.GRAY)
+arcade.draw_lrtb_rectangle_filled(0, 165, 210, 193, arcade.color.BROWN_NOSE)
+
+arcade.draw_lrtb_rectangle_filled(540, 580, 130, 115, arcade.color.GRAY)  # Cow Plow
+arcade.draw_lrtb_rectangle_filled(570, 580, 115, 76, arcade.color.GRAY)
+point_list2 = ((580, 130), (580, 76), (630, 76))
+arcade.draw_polygon_filled(point_list2, arcade.color.GRAY)
 
 arcade.finish_render()
 arcade.run()
