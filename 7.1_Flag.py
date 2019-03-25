@@ -10,3 +10,7 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
+arcade.open_window(1,1)
+arcade.set_background_color(500,500,500)
+
+arcade.start_render()
