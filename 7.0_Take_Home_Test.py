@@ -14,8 +14,7 @@ arcade.start_render()
 
 for x_line in range(0, 500, 20):  # grid
     arcade.draw_rectangle_filled(0 + x_line, 200, 1, 400, arcade.color.BLACK)
-for y_line in range(0, 400, 20):
-    arcade.draw_rectangle_filled(250, 0 + y_line, 500, 1, arcade.color.BLACK)
+    arcade.draw_rectangle_filled(250, 0 + x_line, 500, 1, arcade.color.BLACK)
 
 arcade.draw_lrtb_rectangle_filled(19.5, 80, 380, 359.5, arcade.color.PHLOX)  # Phlox Block
 
