@@ -31,7 +31,7 @@ arcade.draw_rectangle_filled(99, 40, 59.5, 1, arcade.color.BLUE, 45)  # Blue Lin
 
 arcade.draw_text("I love you. I know.", 19, 159, arcade.color.BRICK_RED, 20)  # Brick Letters
 
-arcade.draw_arc_filled(400, 320, 60, 60, arcade.color.YELLOW, 0, 300, 30)
+arcade.draw_arc_filled(400, 320, 60, 60, arcade.color.YELLOW, 0, 300, 30)  # Pac-Man
 
 arcade.finish_render()
 
