@@ -21,9 +21,9 @@ for i in range(7):                                                              
 arcade.draw_lrtb_rectangle_filled(0, 197.6, 260, 120, (0,0,128))                #blue rectangle
 for i in range(1,10):                                                           #stars
     if i%2==0:
-        arcade.draw_text("*   *   *   *   *   *", 8.822, 237.952-stary, (255,255,255) , 20.246)
+        arcade.draw_text("*   *   *   *   *", 24.752, 233.952-stary, (255,255,255) , 20.246)
     else:
-        arcade.draw_text("*   *   *   *   *", 24.752, 223.912-stary, (255, 255, 255), 20.246)
-    stary+=28.08
+        arcade.draw_text("*   *   *   *   *   *", 8.822, 233.952 - stary, (255, 255, 255), 20.246)
+    stary+=14.04
 arcade.finish_render()
 arcade.run()
