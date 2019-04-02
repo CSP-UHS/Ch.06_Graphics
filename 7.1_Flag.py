@@ -10,4 +10,9 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
-arcade.open_window(600,600, "Star Wars Art")
+arcade.open_window(490,260, "Star Wars Art")
+arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
+arcade.start_render()
+
+arcade.finish_render()
+arcade.run()
