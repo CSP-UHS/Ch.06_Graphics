@@ -15,6 +15,11 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
-
+import arcade
+arcade.open_window(494,260,"")
+arcade.set_background_color((255, 255, 255))
+arcade.start_render()
+arcade.finish_render()
+arcade.run()
 
 

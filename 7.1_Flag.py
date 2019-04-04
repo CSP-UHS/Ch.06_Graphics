@@ -8,7 +8,7 @@ for i in range(7):                                                              
     arcade.draw_lrtb_rectangle_filled(0, 494, 20+redy, 0+redy, (200,0,0))
     redy+= 40
 arcade.draw_lrtb_rectangle_filled(0, 197.6, 260, 120, (0, 0, 128))           #blue rectangle
-for i in range(5): #stars
+for i in range(5):                                                              #stars
     arcade.draw_text("*   *   *   *   *   *", 8.822, 233 - stary, (255, 255, 255), 20.246)
     if i ==4:
         continue
