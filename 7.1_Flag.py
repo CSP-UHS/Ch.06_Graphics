@@ -10,9 +10,12 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
-arcade.open_window(490,260, "Star Wars Art")
-arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
-arcade.start_render()
+arcade.open_window(494,260, "American Flag")
+arcade.set_background_color(arcade.color.WHITE)
 
+arcade.start_render()
+for y_offset in range(0,260,40):
+    arcade.draw_lrtb_rectangle_filled(0,494,y_offset+20,y_offset+0,arcade.color.RED)
+arcade.draw_rectangle_filled(98.8,195,197.6,150,arcade.color.BLUE)
 arcade.finish_render()
 arcade.run()
