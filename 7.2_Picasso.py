@@ -16,9 +16,27 @@ When you are finished Pull Request your file to your instructor.
 '''
 
 import arcade
-arcade.open_window(494,260,"")
+arcade.open_window(500,250,"")
 arcade.set_background_color((255, 255, 255))
 arcade.start_render()
+wheelx=0
+
+arcade.draw_lrtb_rectangle_filled(65, 430, 90, 70, (105,125,55))         #frame
+arcade.draw_lrtb_rectangle_filled(100, 200, 150, 90, (105,125,55))      #hood
+arcade.draw_lrtb_rectangle_filled(200, 300, 100, 90, (105,125,55))      #door
+point_list = ((270, 100),                                                #door angle
+              (300, 100),
+              (300, 150))
+arcade.draw_polygon_filled(point_list, (105,125,55))
+arcade.draw_lrtb_rectangle_filled(300, 420, 150, 90, (105,125,55))          #trunk
+for i in range(2):                                                      #wheels
+    if i == 1:
+        wheelx=250
+    arcade.draw_circle_filled(115+wheelx, 60, 40, (0, 0, 0))
+
+
+
+
 arcade.finish_render()
 arcade.run()
 
