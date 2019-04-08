@@ -21,18 +21,26 @@ arcade.set_background_color((255, 255, 255))
 arcade.start_render()
 wheelx=0
 
-arcade.draw_lrtb_rectangle_filled(65, 430, 90, 70, (105,125,55))         #frame
+arcade.draw_lrtb_rectangle_filled(65, 430, 90, 70, (105,125,55))        #frame
 arcade.draw_lrtb_rectangle_filled(100, 200, 150, 90, (105,125,55))      #hood
+arcade.draw_lrtb_rectangle_filled(105, 130, 155, 150, (105,125,55))     #thingy on hood
+arcade.draw_lrtb_rectangle_filled(95, 100, 145, 120, (150,150,150))     #head light
 arcade.draw_lrtb_rectangle_filled(200, 300, 100, 90, (105,125,55))      #door
-point_list = ((270, 100),                                                #door angle
+arcade.draw_lrtb_rectangle_filled(300, 420, 150, 90, (105,125,55))      #trunk
+point_list = ((265, 100),                                               #door angle
               (300, 100),
               (300, 150))
 arcade.draw_polygon_filled(point_list, (105,125,55))
-arcade.draw_lrtb_rectangle_filled(300, 420, 150, 90, (105,125,55))          #trunk
-for i in range(2):                                                      #wheels
+point_list = ((194, 150),                                               #windsheild
+              (200, 150),
+              (210, 200),
+              (204, 201))
+arcade.draw_polygon_filled(point_list, (0,0,0))
+
+for i in range(2):                                                       #wheels
     if i == 1:
         wheelx=250
-    arcade.draw_circle_filled(115+wheelx, 60, 40, (0, 0, 0))
+    arcade.draw_circle_filled(115+wheelx, 60, 45, (0, 0, 0))
 
 
 
