@@ -36,6 +36,15 @@ point_list = ((194, 150),                                               #windshe
               (210, 200),
               (204, 201))
 arcade.draw_polygon_filled(point_list, (0,0,0))
+point_list = ((420, 110),                                               #spare
+              (430, 100),
+              (440, 100),
+              (450, 110),
+              (450, 175),
+              (440, 185),
+              (430, 185),
+              (420, 175),
+arcade.draw_polygon_filled(point_list, (0,0,0))
 
 for i in range(2):                                                       #wheels
     if i == 1:
