@@ -20,8 +20,16 @@ arcade.open_window(500,250,"")
 arcade.set_background_color((255, 255, 255))
 arcade.start_render()
 wheelx=0
+arcx=0
 
-arcade.draw_lrtb_rectangle_filled(65, 430, 90, 70, (105,125,55))        #frame
+
+
+for i in range(2):                                                       #leaf springs
+    if i == 1:
+       arcx=250
+    arcade.draw_arc_outline(115+arcx,75,55,20,(0, 0, 0), 180, 360, 3, 0)
+
+arcade.draw_lrtb_rectangle_filled(55, 430, 90, 70, (105,125,55))        #frame
 arcade.draw_lrtb_rectangle_filled(100, 200, 150, 90, (105,125,55))      #hood
 arcade.draw_lrtb_rectangle_filled(105, 130, 155, 150, (105,125,55))     #thingy on hood
 arcade.draw_lrtb_rectangle_filled(95, 100, 145, 120, (150,150,150))     #head light
@@ -36,21 +44,20 @@ point_list = ((194, 150),                                               #windshe
               (210, 200),
               (204, 201))
 arcade.draw_polygon_filled(point_list, (0,0,0))
-point_list = ((420, 110),                                               #spare
+point_list = ((420, 105),                                               #spare
               (430, 100),
               (440, 100),
-              (450, 110),
-              (450, 175),
+              (450, 105),
+              (450, 180),
               (440, 185),
               (430, 185),
-              (420, 175))
+              (420, 180))
 arcade.draw_polygon_filled(point_list, (0,0,0))
 
 for i in range(2):                                                       #wheels
     if i == 1:
-        wheelx=250
+       wheelx=250
     arcade.draw_circle_filled(115+wheelx, 60, 45, (0, 0, 0))
-
 
 arcade.finish_render()
 
