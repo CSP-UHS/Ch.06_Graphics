@@ -28,7 +28,8 @@ for i in range(2):                                                       #leaf s
     if i == 1:
        arcx=250
     arcade.draw_arc_outline(115+arcx,75,55,20,(0, 0, 0), 180, 360, 3, 0)
-
+arcade.draw_line(190, 110, 212, 140, (0,0,0), 5)                            #stering colum
+arcade.draw_line(212, 140, 223, 155, (0,0,0), 3)                                #small stering part
 arcade.draw_lrtb_rectangle_filled(55, 430, 90, 70, (105,125,55))        #frame
 arcade.draw_lrtb_rectangle_filled(100, 200, 150, 90, (105,125,55))      #hood
 arcade.draw_lrtb_rectangle_filled(105, 130, 155, 150, (105,125,55))     #thingy on hood
@@ -53,6 +54,13 @@ point_list = ((420, 105),                                               #spare
               (430, 185),
               (420, 180))
 arcade.draw_polygon_filled(point_list, (0,0,0))
+point_list = ((305, 150),                                               #seat
+              (320, 150),
+              (324, 168),
+              (321, 170),
+              (310, 170))
+arcade.draw_polygon_filled(point_list, (0,0,0))
+
 
 for i in range(2):                                                       #wheels
     if i == 1:
