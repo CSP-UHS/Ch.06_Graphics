@@ -16,10 +16,19 @@ When you are finished Pull Request your file to your instructor.
 '''
 
 import arcade
-arcade.open_window(400,550, "HELLO")
+arcade.open_window(425,585, "HELLO")
 arcade.set_background_color(arcade.color.GRANNY_SMITH_APPLE)
 arcade.start_render()
-
+arcade.draw_rectangle_filled(107.5,55,205,100,arcade.color.WHITE)
+arcade.draw_rectangle_filled(265,55,100,100,arcade.color.WHITE)
+for x_offset in range(55,266,105):
+    arcade.draw_rectangle_filled(x_offset,160,100,100,arcade.color.WHITE)
+for x_offset in range(55, 371, 105):
+    arcade.draw_rectangle_filled(x_offset,265,100,100,arcade.color.WHITE)
+    arcade.draw_rectangle_filled(x_offset,370,100,100,arcade.color.WHITE)
+    arcade.draw_rectangle_filled(x_offset,475,100,100,arcade.color.WHITE)
+    arcade.draw_rectangle_filled(x_offset,555,100,50,arcade.color.WHITE)
+arcade.draw_rectangle_filled(370,107.5,100,205,arcade.color.WHITE)
 arcade.finish_render()
 arcade.run()
 
