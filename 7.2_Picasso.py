@@ -18,7 +18,9 @@ import arcade
 arcade.open_window(300,550, "keyboard gang")
 arcade.set_background_color(arcade.color.GRAY)
 arcade.start_render()
-for x_offset in range(37,37,37):
-    arcade.draw_rectangle_filled(x_offset+75,75,75,75,arcade.color.WHITE)
+for y_offset in range (350,466, 100):
+    for x_offset in range (100,415,100):
+        arcade.draw_rectangle_filled(x_offset-50,y_offset,90,90,arcade.color.WHITE)
+        arcade.draw_rectangle_filled(x_offset-50,50,90,90,arcade.color.WHITE)
 arcade.finish_render()
 arcade.run()
