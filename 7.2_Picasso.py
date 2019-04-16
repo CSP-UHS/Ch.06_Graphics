@@ -22,20 +22,34 @@ arcade.start_render()
 wheelx=0
 arcx=0
 
-
-
 for i in range(2):                                                       #leaf springs
     if i == 1:
        arcx=250
     arcade.draw_arc_outline(115+arcx,75,55,20,(0, 0, 0), 180, 360, 3, 0)
 arcade.draw_line(190, 110, 212, 140, (0,0,0), 5)                            #stering colum
 arcade.draw_line(212, 140, 223, 155, (0,0,0), 3)                                #small stering part
+arcade.draw_circle_filled(223, 155, 3, (0,0,0))                         #circle on steeing wheel
+arcade.draw_line(208, 166, 238, 144, (0,0,0), 3)                        #steering wheel
+
 arcade.draw_lrtb_rectangle_filled(55, 430, 90, 70, (105,125,55))        #frame
-arcade.draw_lrtb_rectangle_filled(100, 200, 150, 90, (105,125,55))      #hood
-arcade.draw_lrtb_rectangle_filled(105, 130, 155, 150, (105,125,55))     #thingy on hood
-arcade.draw_lrtb_rectangle_filled(95, 100, 145, 120, (150,150,150))     #head light
+arcade.draw_lrtb_rectangle_filled(85, 200, 150, 90, (105,125,55))      #hood
+arcade.draw_lrtb_rectangle_filled(100, 125, 155, 150, (105,125,55))     #thingy on hood
+arcade.draw_lrtb_rectangle_filled(80, 85, 145, 120, (150,150,150))     #head light
 arcade.draw_lrtb_rectangle_filled(200, 300, 100, 90, (105,125,55))      #door
 arcade.draw_lrtb_rectangle_filled(300, 420, 150, 90, (105,125,55))      #trunk
+
+arcade.draw_line(180, 70, 180, 62, (70,70,70), 5)               #exuast
+arcade.draw_circle_filled(180, 62, 2.5, (70,70,70))             #exuast bend
+arcade.draw_line(180, 62, 280, 62, (70,70,70), 5)               #exuast pipe
+arcade.draw_line(230, 62, 260, 62, (70,70,70), 10)              #cat
+arcade.draw_circle_filled(280, 62, 2.5, (0,0,0))                #final exuast hole
+arcade.draw_line(225, 70, 225, 64.5, (0,0,0), 3)                #exaut atchments
+arcade.draw_line(265, 70, 265, 64.5, (0,0,0), 3)                #exaut atchments
+
+arcade.draw_circle_filled(400, 115, 10, (180,180,180))              #gas cap
+arcade.draw_circle_filled(400, 115, 9, (80,80,80))
+arcade.draw_lrtb_rectangle_filled(394, 406, 117, 113, (180,180,180))
+
 point_list = ((265, 100),                                               #door angle
               (300, 100),
               (300, 150))
@@ -61,7 +75,6 @@ point_list = ((305, 150),                                               #seat
               (310, 170))
 arcade.draw_polygon_filled(point_list, (0,0,0))
 
-
 for i in range(2):                                                       #wheels
     if i == 1:
        wheelx=250
@@ -70,5 +83,3 @@ for i in range(2):                                                       #wheels
 arcade.finish_render()
 
 arcade.run()
-
-
