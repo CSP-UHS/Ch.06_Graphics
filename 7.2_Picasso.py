@@ -1,26 +1,27 @@
-'''
-PICASSO PROJECT
----------------
-Your job is to make a cool picture.
-You must use multiple colors.
-You must have a coherent picture. No abstract art with random shapes.
-You must use multiple types of graphic functions (e.g. circles, rectangles, lines, etc.)
-Somewhere you must include a WHILE or FOR loop to create a repeating pattern.
-Do not just redraw the same thing in the same location 10 times. 
-You can contain multiple drawing commands in a loop, so you can draw multiple train cars for example.
-Please use comments and blank lines to make it easy to follow your program. 
-If you have 5 lines that draw a robot, group them together with blank lines above and below. 
-Then add a comment at the top telling the reader what you are drawing.
-IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
-When you are finished Pull Request your file to your instructor.
-'''
 import arcade
 arcade.open_window(300,550, "keyboard gang")
-arcade.set_background_color(arcade.color.GRAY)
+arcade.set_background_color((200,200,200))
 arcade.start_render()
-for y_offset in range (350,466, 100):
+for y_offset in range (350,466,100):
     for x_offset in range (100,415,100):
         arcade.draw_rectangle_filled(x_offset-50,y_offset,90,90,arcade.color.WHITE)
         arcade.draw_rectangle_filled(x_offset-50,50,90,90,arcade.color.WHITE)
+        arcade.draw_rectangle_filled(x_offset - 50, 526, 90, 45, arcade.color.WHITE)
+arcade.draw_rectangle_filled(150,150,90,90,arcade.color.WHITE)
+arcade.draw_text("F13",70,505, arcade.color.GRAY,10)
+arcade.draw_text("F14",170,505, arcade.color.GRAY,10)
+arcade.draw_text("F15",270,505, arcade.color.GRAY,10)
+arcade.draw_text("fn",45,440, arcade.color.GRAY,15)
+arcade.draw_text("home",125,440, arcade.color.GRAY,15)
+arcade.draw_text("page",230,450, arcade.color.GRAY,15)
+arcade.draw_text(" up",230,435, arcade.color.GRAY,15)
+arcade.draw_text("delete>",20,345, arcade.color.GRAY,15)
+arcade.draw_text("end",135,345, arcade.color.GRAY,15)
+arcade.draw_text("page",230,355, arcade.color.GRAY,15)
+arcade.draw_text("down",225,335, arcade.color.GRAY,15)
+arcade.draw_text("^",145,140, arcade.color.GRAY,15)
+arcade.draw_text("v",145,45, arcade.color.GRAY,13)
+arcade.draw_text("<",45,45, arcade.color.GRAY,13)
+arcade.draw_text(">",245,45, arcade.color.GRAY,13)
 arcade.finish_render()
 arcade.run()
