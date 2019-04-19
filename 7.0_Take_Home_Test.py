@@ -8,9 +8,13 @@ The picture is 500px wide and 400px tall. Look up ARC in the documentation to do
 '''
 import arcade
 arcade.open_window(500,400, "take home test")
-arcade.set_background_color(arcade.color.BLACK)
+arcade.set_background_color(arcade.color.ALMOND)
 arcade.start_render()
-arcade.draw_rectangle_filled(10,10,20,20,arcade.color.WHITE)
+for x_offset in range(0,501,20):
+    arcade.draw_line(x_offset,0,x_offset,400,arcade.color.BLACK)
+for y_offset in range(0,401,20):
+    arcade.draw_line(0,y_offset,500,y_offset,arcade.color.BLACK)
+arcade.draw_rectangle_filled(20,380,60,20,arcade.color.PINK)
 
 arcade.finish_render()
 arcade.run()
