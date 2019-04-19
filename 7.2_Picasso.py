@@ -85,28 +85,37 @@ for i in range(2):
         on_draw+= float((6*(math.pi))/5)
     centerx+=250
                         #knobs on tires
+centerx = 115
 knobradious = 45
-knoboutsideradious = 50
-on_draw = float((6 * (math.pi)) / 5)
+knoboutsideradious = 47
+on_draw = float(((math.pi)) / 5)
+on_draw2 = float(((math.pi)) / 5)
 for i in range(2):
     for i in range(10):
-        knobxpoint = knobradious * math.sin(on_draw-5) + centerx
+        knobxpoint = knobradious * math.sin(on_draw)-2 + centerx
         print(knobxpoint)
-        knobypoint = knobradious * math.cos(on_draw-5) + centery
-        knobxpoint2 = knobradious * math.sin(on_draw+5) + centerx
-        knobypoint2 = knobradious * math.cos(on_draw-5) + centery
-        knobxpoint3 = knoboutsideradious * math.sin(on_draw) + centerx
+        knobypoint = knobradious * math.cos(on_draw) + centery
+        print(knobypoint)
+        knobxpoint2 = knobradious * math.sin(on_draw2)+2 + centerx
+        print(knobxpoint2)
+        knobypoint2 = knobradious * math.cos(on_draw) + centery
+        print(knobypoint2)
+        knobxpoint3 = knoboutsideradious * math.sin(on_draw2)+2 + centerx
+        print(knobxpoint3)
         knobypoint3 = knoboutsideradious * math.cos(on_draw) + centery
-        knobxpoint4 = knoboutsideradious * math.sin(on_draw) + centerx
+        print(knobypoint3)
+        knobxpoint4 = knoboutsideradious * math.sin(on_draw)-2 + centerx
+        print(knobxpoint4)
         knobypoint4 = knoboutsideradious * math.cos(on_draw) + centery
+        print(knobypoint4)
         #arcade.draw_circle_filled(xpoint, ypoint, 3, (150, 150, 150))
         point_list = ((knobxpoint, knobypoint),
                       (knobxpoint2, knobypoint2),
                       (knobxpoint3, knobypoint3),
                       (knobxpoint4, knobypoint4))
 
-        arcade.draw_polygon_filled(point_list, (250, 0, 0))
-        on_draw += float((6 * (math.pi)) / 5)
+        arcade.draw_polygon_filled(point_list, (0, 0, 0))
+        on_draw += float(((math.pi)) / 5)
     centerx += 250
 
 arcade.finish_render()
