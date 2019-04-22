@@ -84,7 +84,9 @@ for i in range(2):
         arcade.draw_circle_filled(xpoint, ypoint, 3, (150, 150, 150))
         on_draw+= float((6*(math.pi))/5)
     centerx+=250
-                        #knobs on tires
+arcade.draw_text("CJ-2A", 145, 115, (25,45,15), 10)                     #logo
+                   #knobs on tires
+'''
 centerx = 115
 knobradious = 45
 knoboutsideradious = 47
@@ -114,9 +116,9 @@ for i in range(2):
                       (knobxpoint3, knobypoint3),
                       (knobxpoint4, knobypoint4))
 
-        arcade.draw_polygon_filled(point_list, (0, 0, 0))
+        arcade.draw_polygon_filled(point_list, (250, 0, 0))
         on_draw += float(((math.pi)) / 5)
     centerx += 250
-
+'''
 arcade.finish_render()
 arcade.run()
