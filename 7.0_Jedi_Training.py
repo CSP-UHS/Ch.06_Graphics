@@ -2,8 +2,8 @@
 
 '''
 Recreate, exactly the Test Picture from the website. The arcade colors used in this picture in no particular order are:
-BLACK,ALMOND,PHLOX,BLUSH,RED,BLUE, WISTERIA,
-AMBER, BRICK_RED and YELLOW.
+BLACK,ALMOND,PHLOX,BLUSH,RED,BLUE, WISTERIA,AMBER,
+BRICK_RED and YELLOW.
 The picture is 500px wide and 400px tall. Look up ARC in the documentation to do the PAC-MAN.
 '''
 
@@ -33,7 +33,15 @@ arcade.draw_line(120,60,80,20, arcade.color.BLUE)
 
 arcade.draw_circle_filled(250, 200, 40, arcade.color.WISTERIA)
 
-arcade.draw_text("I love you. I know.", 20, 160, arcade.color.BLUSH, 20)
+arcade.draw_text("I love you. I know.", 20, 160, arcade.color.BRICK_RED, 20)
+
+arcade.draw_ellipse_filled(100, 100, 60, 20, arcade.color.AMBER)
+
+arcade.draw_rectangle_filled(200, 300, 40, 20, arcade.color.BLUSH, 45)
+
+
+
+
 #draw in here
 arcade.finish_render()
 
