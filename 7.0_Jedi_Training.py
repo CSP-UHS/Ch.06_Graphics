@@ -37,7 +37,10 @@ arcade.draw_text("I love you. I know.", 20, 160, arcade.color.BRICK_RED, 20)
 
 arcade.draw_ellipse_filled(100, 100, 60, 20, arcade.color.AMBER)
 
-arcade.draw_rectangle_filled(200, 300, 40, 20, arcade.color.BLUSH, 45)
+# arcade.draw_arc_filled(30,30,30,30, arcade.color.YELLOW,30,30,30)
+#
+
+arcade.draw_rectangle_filled(200, 240, 40,20, arcade.color.BLUSH,45)
 
 
 #need a circle with an arc

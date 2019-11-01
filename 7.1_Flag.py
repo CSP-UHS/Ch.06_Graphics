@@ -11,14 +11,15 @@ The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
 y= 0
-arcade.open_window(524,260, "The Stars and Stripes")
+arcade.open_window(494,260, "The Stars and Stripes")
 
 arcade.set_background_color(arcade.color.WHITE) #set backround color
 
 arcade.start_render()
 #Draw in here
-for x_offset in range(0,610,20):
-    arcade.draw_rectangle_filled(0+x_offset,60,10,30,arcade.color.BF0A30)
+for i in range(25):
+    arcade.draw_rectangle_filled(y, 0, 10, 20, arcade.color.RED)
+    y+=20
 #draw in here
 arcade.finish_render()
 
