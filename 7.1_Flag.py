@@ -14,8 +14,6 @@ y = 10
 x = 30
 arcade.open_window(494,260, "The Stars and Stripes")
 
-arcade.set_background_color(arcade.color.WHITE) #set backround color
-
 arcade.start_render()
 #Draw in here
 # for i in range(25):
@@ -23,9 +21,11 @@ arcade.start_render()
 #     y+=20
 for i in range(15):
     arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.RED)
-    # arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.BLUE)
-    y+=20
-arcade.draw_rectangle_filled(300, x, 600, 19.994, arcade.color.WHITE)
+    y+=19.994
+    arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.WHITE)
+    y+=19.994
+
+
 
 #draw in here
 arcade.finish_render()
