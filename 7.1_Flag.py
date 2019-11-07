@@ -23,6 +23,9 @@ for i in range(15):
     arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.WHITE)
     y+=19.994
 
+arcade.draw_rectangle_filled(99, 200, 197.6, 140.01, arcade.color.BLUE)
+
+
 #draw in here
 arcade.finish_render()
 
