@@ -45,7 +45,6 @@ arcade.draw_rectangle_filled(200, 240, 40,20, arcade.color.BLUSH,45)
 
 arcade.draw_arc_filled(400, 320, 60, 60,
                        arcade.color.YELLOW, 30, 325, 5)
-#need a circle with an arc
 
 #draw in here
 arcade.finish_render()
