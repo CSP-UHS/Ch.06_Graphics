@@ -16,16 +16,12 @@ arcade.open_window(494,260, "The Stars and Stripes")
 
 arcade.start_render()
 #Draw in here
-# for i in range(25):
-#     arcade.draw_rectangle_filled(y, 0, 10, 20, arcade.color.RED)
-#     y+=20
+
 for i in range(15):
     arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.RED)
     y+=19.994
     arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.WHITE)
     y+=19.994
-
-
 
 #draw in here
 arcade.finish_render()
