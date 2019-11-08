@@ -26,8 +26,8 @@ for i in range(7):
     arcade.draw_rectangle_filled(300, y, 600, 19.994, arcade.color.RED)
     y+=39.988
 arcade.draw_rectangle_filled(99, 200, 197.6, 160, arcade.color.BLUE)
-##############################
-3#############################
+############################# WORK ON THIS
+#############################
 # for i in range(4):
 #     for i in range(6):
 #         arcade.draw_text("*", x,230, arcade.color.WHITE,20)
@@ -35,7 +35,8 @@ arcade.draw_rectangle_filled(99, 200, 197.6, 160, arcade.color.BLUE)
 #     for i in range(5):
 #         arcade.draw_text("*", p,220, arcade.color.WHITE,20)
 #         p+=32.5
-
+##############################
+#############################
 
 # for i in range(6):
 #     arcade.draw_text("*", z,205, arcade.color.WHITE,20)
