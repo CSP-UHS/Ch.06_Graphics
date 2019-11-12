@@ -10,12 +10,15 @@ arcade.open_window(500, 400, "Star Wars Art")
 arcade.set_background_color(arcade.color.ALMOND)
 arcade.start_render()
 
-for x_offset in range(0,480,20):
-    arcade.draw_line(0+x_offset,0,0+x_offset,500,arcade.color.BLACK,1)#fix lines!!!!!!!!
-for y_offset in range(0,380,20):
-    arcade.draw_line(0,0+y_offset,400,0+y_offset,arcade.color.BLACK,1)
-arcade.draw_rectangle_filled(20,480,60,20,arcade.color.PHLOX)
-
+for x_offset in range(0,500,21):
+    arcade.draw_line(0+x_offset,0,0+x_offset,500,arcade.color.BLACK,1)
+for y_offset in range(0,500,21):
+    arcade.draw_line(0,0+y_offset,500,0+y_offset,arcade.color.BLACK,1)
+arcade.draw_rectangle_filled(52,367,64,20,arcade.color.PHLOX)
+arcade.draw_rectangle_filled(210,273,41,21,arcade.color.BLUSH,45)
+arcade.draw_circle_filled(260,210,42,arcade.color.WISTERIA)
+arcade.draw_arc_filled(400, 315, 64, 64, arcade.color.YELLOW,30,330)
+arcade.draw_text("I love you. I know.",22,164,)#finnish
 
 arcade.finish_render()
 arcade.run()
