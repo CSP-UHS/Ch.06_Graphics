@@ -18,13 +18,16 @@ import arcade
 
 arcade.open_window(500,400, "Nellie Leaverton")
 
-arcade.set_background_color(arcade.color.ALMOND) #set backround color
+arcade.set_background_color(arcade.color.WHITE) #set backround color
 
 arcade.start_render()
-#######
+###############
+arcade.draw_circle_filled(250,200, 150, arcade.color.BLACK)
 
+arcade.draw_circle_outline(250,200, 95, arcade.color.ALABAMA_CRIMSON,3)
 
-########
+dra
+###############
 arcade.finish_render()
 
 arcade.run()
