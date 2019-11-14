@@ -1,4 +1,4 @@
-#Sign your name:________________
+#Sign your name:Julie Pham
 
 '''
 Recreate, exactly the Test Picture from the website. The arcade colors used in this picture in no particular order are:
