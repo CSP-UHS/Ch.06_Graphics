@@ -1,4 +1,4 @@
-<img align="left" src="http://hermonswebsites.com/Classes/CS/python.png"><H2>Chapter 7 Graphics</H2>
+<img align="left" src="http://popicon.life/wp-content/uploads/2016/07/169mrclean.jpg"><H2>Chapter 7 Graphics</H2>
 
 In this chapter you will be learning about using the ARCADE module to create graphics. 
 
