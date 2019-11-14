@@ -16,9 +16,9 @@ arcade.open_window(494,260, "The Stars and Stripes")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 for i in range(7):
-    arcade.draw_lrtb_rectangle_filled(0, 600, y, y-19.994, arcade.color.RED)
+    arcade.draw_lrtb_rectangle_filled(0, 600, y, y-19.994, (191, 10, 48))
     y+=39.988
-arcade.draw_lrtb_rectangle_filled(0, 198, 260, 120, arcade.color.BLUE)
+arcade.draw_lrtb_rectangle_filled(0, 198, 260, 120, (0, 40, 104))
 
 for i in range(9):
     if i % 2 == 0:
