@@ -10,3 +10,11 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
+arcade.open_window(494, 260, "American Flag")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+
+#start here
+
+arcade.finish_render()
+arcade.run()
