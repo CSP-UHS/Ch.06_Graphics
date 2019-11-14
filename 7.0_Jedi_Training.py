@@ -17,8 +17,11 @@ for y_offset in range(0,500,21):
 arcade.draw_rectangle_filled(52,367,64,20,arcade.color.PHLOX)
 arcade.draw_rectangle_filled(210,273,41,21,arcade.color.BLUSH,45)
 arcade.draw_circle_filled(260,210,42,arcade.color.WISTERIA)
-arcade.draw_arc_filled(400, 315, 64, 64, arcade.color.YELLOW,30,330)
-arcade.draw_text("I love you. I know.",22,164,)#finnish
+arcade.draw_arc_filled(400, 315, 64, 64, arcade.color.YELLOW,40,340)
+arcade.draw_text("I love you. I know.",20,168,arcade.color.BRICK_RED,20)
+arcade.draw_ellipse_filled(100,100,60,20,arcade.color.AMBER)
+arcade.draw_line(84,21,126,63,arcade.color.BLUE,1)
+arcade.draw_rectangle_filled(462,10,5,6,arcade.color.RED)
 
 arcade.finish_render()
 arcade.run()
