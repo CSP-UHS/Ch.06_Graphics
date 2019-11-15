@@ -32,6 +32,6 @@ arcade.draw_circle_filled(250, 200, 40, arcade.color.WISTERIA)
 arcade.draw_rectangle_filled(200, 260, 40, 20, arcade.color.BLUSH, 45)
 #pacman
 # arcade.draw_ellipse_filled(400, 320, 60, arcade.color.YELLOW, 3)
-# arcade.draw_arc_filled(center_x: float, center_y: float, width: float, height: float, color: Union[Tuple[int, int, int], List[int], Tuple[int, int, int, int]], start_angle: float, end_angle: float, tilt_angle: float = 0, num_segments: int = 128)
+arcade.draw_arc_filled(400, 320, 60, 60, arcade.color.YELLOW, 30, 325, 0)
 arcade.finish_render()
 arcade.run()
