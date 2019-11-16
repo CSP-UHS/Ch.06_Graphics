@@ -2,7 +2,8 @@ import arcade
 
 arcade.open_window(700,400, "Nellie Leaverton")
 arcade.start_render()
-###############
+###############################################################
+###############################################################
 arcade.draw_lrtb_rectangle_filled(0,700,400,240, arcade.color.BOSTON_UNIVERSITY_RED) #TOP RED
 arcade.draw_lrtb_rectangle_filled(0, 700, 240, 0, arcade.color.BLUEBONNET) #BOTTOM BLUE
 ### #1 YELLOW
@@ -58,7 +59,43 @@ my_list = (
     (580, 270)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
-################
+
+######STAR#######
+
+my_list = (   ### Bottom point
+    (330, 170),
+    (370, 170),
+    (350, 112)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+
+## Second bottom left
+my_list = (   ### Bottom point
+    (310, 180),
+    (330, 170),
+    (300, 150)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+### top
+my_list = (   ### Bottom point
+    (370, 240),
+    (330, 240),
+    (350, 320)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+
+## left of top point
+my_list = (   ### Bottom point
+    (390, 220),
+    (370, 240),
+    (400, 260)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+
+
+
+################################################################
+################################################################
 arcade.finish_render()
 
 arcade.run()
