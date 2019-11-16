@@ -70,14 +70,31 @@ my_list = (   ### Bottom point
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 ## Second bottom left
-my_list = (   ### Bottom point
+my_list = (   ###  secpmd Bottom point
     (310, 180),
     (330, 170),
     (300, 150)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+
+## third bp
+my_list = (   ### third bp
+    (310, 220),
+    (310, 180),
+    (250, 200)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+## left top
+my_list = (   ### left top point
+    (330, 240),
+    (310, 220),
+    (300, 260)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+
+
 ### top
-my_list = (   ### Bottom point
+my_list = (   ### top point
     (370, 240),
     (330, 240),
     (350, 320)
@@ -85,13 +102,20 @@ my_list = (   ### Bottom point
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 ## left of top point
-my_list = (   ### Bottom point
+my_list = (   ### top left point
     (390, 220),
     (370, 240),
     (400, 260)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
+## left 2 tp
+my_list = (   ### Bottom point
+    (390, 180),
+    (390, 220),
+    (450, 200)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 
 ################################################################
