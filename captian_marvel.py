@@ -117,6 +117,14 @@ my_list = (   ### Bottom point
 )
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
+## left of bp
+
+my_list = (   ### Bottom point
+    (370, 170),
+    (390, 180),
+    (400, 150)
+)
+arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 ################################################################
 ################################################################
