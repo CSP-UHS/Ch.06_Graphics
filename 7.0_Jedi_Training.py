@@ -33,5 +33,7 @@ arcade.draw_rectangle_filled(200, 260, 40, 20, arcade.color.BLUSH, 45)
 #pacman
 # arcade.draw_ellipse_filled(400, 320, 60, arcade.color.YELLOW, 3)
 arcade.draw_arc_filled(400, 320, 60, 60, arcade.color.YELLOW, 30, 325, 0)
+#point
+arcade.draw_point(460,10,arcade.color.RED,5)
 arcade.finish_render()
 arcade.run()
