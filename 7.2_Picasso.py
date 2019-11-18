@@ -66,7 +66,7 @@ arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 n = 230
 o =300
 p = 270
-q = 200
+q = 202
 for i in range(2):
     my_list = (
         (350, n),
@@ -84,13 +84,18 @@ w = 300
 v = 280
 x = 249
 y = 270
-my_list = (
-    (580, 300),
-    (700, 280),
-    (700, 249),
-    (580, 270)
-)
-arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+for i in range(2):
+    my_list = (
+        (580, w),
+        (700, v),
+        (700, x),
+        (580, y)
+    )
+    arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    w = w - 30
+    v = v - 30
+    x = x - 30
+    y = y - 30
 # ## line
 e = 279
 f = 300
