@@ -56,39 +56,49 @@ arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 my_list = (
     (120, 270),
     (350, 200),
-    (350, 233),
-    (120, 303)
+    (350, 230),
+    (120, 300)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 ### #3
 my_list = (
-    (350, 233),
-    (580, 303),
+    (350, 230),
+    (580, 300),
     (580, 270),
     (350, 200)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 ### #4
 my_list = (
-    (580, 304),
+    (580, 300),
     (700, 280),
     (700, 249),
     (580, 270)
 )
 arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
-# ##top line
-# arcade.draw_line(0, 279, 120, 303, arcade.color.BLACK, 3)
-# arcade.draw_line(120, 303, 350, 233, arcade.color.BLACK, 3)
-# arcade.draw_line(350, 233, 580, 303, arcade.color.BLACK, 3)
-# arcade.draw_line(580, 303, 700, 280, arcade.color.BLACK, 3)
-# #middle line
-# arcade.draw_line(0, 249, 120,270)
+# ## line
+e = 279
+f = 300
+g = 233
+h = 280
+for i in range (3):
+    my_list = (
+        (0, e),
+        (120, f),
+        (350, g),
+        (580, f),
+        (700, h),
+        #back around
+        (580, f),
+        (350, g),
+        (120, f),
+    )
+    arcade.draw_polygon_outline(my_list, arcade.color.BLACK, 4)
+    e = e - 30
+    f = f - 30
+    g = g - 30
+    h = h - 30
 
-my_list = (
-    (0, 279)
-    (120, 303)
-)
-arcade.draw_polygon_outline()
 ######STAR#######
 ######STAR#######
 ######STAR#######
