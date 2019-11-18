@@ -46,25 +46,24 @@ for i in range(2):
     d = d - 30
 
 ### #2
-i = 270
+x = 270
 j = 200
 k = 230
 m = 300
-# for i in range(2):
-my_list = (
-        (120, i),
+for i in range(2):
+    my_list = (
+        (120, x),
         (350, j),
         (350, k),
-        (120, m)
-    )
-arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
-    # i = i - 30
-    # j = j - 30
-    # k = k - 30
-    # m = m - 30
+        (120, m))
+    arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    x = x - 30
+    j = j - 30
+    k = k - 30
+    m = m - 30
 # ### #3
 n = 230
-o =300
+o = 300
 p = 270
 q = 202
 for i in range(2):
