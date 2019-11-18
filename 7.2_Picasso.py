@@ -25,34 +25,27 @@ arcade.draw_lrtb_rectangle_filled(0,700,400,240, arcade.color.BOSTON_UNIVERSITY_
 arcade.draw_lrtb_rectangle_filled(0, 700, 240, 0, arcade.color.BLUEBONNET) #BOTTOM BLUE
 ### #1 YELLOW
 a = 279
-b = 303
+b = 300
 c = 270
 d = 249
 
 my_list=()
-###### for the loop
-# for i in range(2):
-#     my_list = (
-#         (0,a),
-#         (120, b),
-#         (120, c),
-#         (0, d)
-#         )
-#     arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
-#     a = a - 20
-#     b = b - 20
-#     c = c - 20
-#     d = d - 20
-############
-
-my_list = (
-    (0,a),
-    (120, b),
-    (120, c),
-    (0, d)
-    )
-arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+##### for the loop
+# 1
+for i in range(2):
+    my_list = (
+        (0,a),
+        (120, b),
+        (120, c),
+        (0, d)
+        )
+    arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    a = a - 30
+    b = b - 30
+    c = c - 30
+    d = d - 30
 ### #2
+for i in range(2):
 my_list = (
     (120, 270),
     (350, 200),
