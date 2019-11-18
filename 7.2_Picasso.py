@@ -44,24 +44,46 @@ for i in range(2):
     b = b - 30
     c = c - 30
     d = d - 30
+
 ### #2
+i = 270
+j = 200
+k = 230
+m = 300
+# for i in range(2):
+my_list = (
+        (120, i),
+        (350, j),
+        (350, k),
+        (120, m)
+    )
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    # i = i - 30
+    # j = j - 30
+    # k = k - 30
+    # m = m - 30
+# ### #3
+n = 230
+o =300
+p = 270
+q = 200
 for i in range(2):
-my_list = (
-    (120, 270),
-    (350, 200),
-    (350, 230),
-    (120, 300)
-)
-arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
-### #3
-my_list = (
-    (350, 230),
-    (580, 300),
-    (580, 270),
-    (350, 200)
-)
-arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    my_list = (
+        (350, n),
+        (580, o),
+        (580, p),
+        (350, q)
+    )
+    arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
+    n = n - 30
+    o = o - 30
+    p = p - 30
+    q = q - 30
 ### #4
+w = 300
+v = 280
+x = 249
+y = 270
 my_list = (
     (580, 300),
     (700, 280),
