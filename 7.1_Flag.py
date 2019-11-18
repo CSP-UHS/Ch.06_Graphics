@@ -10,19 +10,20 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
-A=260
-B=A*1.9
-y=0
-arcade.open_window(B, A, "American Flag")
+arcade.open_window(494, 260, "The Stars and Stripes")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
-
-for y_offset in range(0,260,7):
-    arcade.draw_lrtb_rectangle_filled(0, B, y+20, y,(191,10,48))
-    y+=40
+for y in range(10,251,40):
+    arcade.draw_rectangle_filled(247, y, 494, 20,(191,10,48))
 arcade.draw_lrtb_rectangle_filled(0, 197.6, 260, 120,(0,40,104))
-for.....
-arcade.draw_text("*",16.38,260-14.04,(255,255,255),12)
-
+#Draw the stars
+y=245.96
+for s in range(9):
+    if s%2==0:
+        arcade.draw_text("*   *   *   *   *   *",16.38, y,(255, 255, 255), 20)
+        y-=14.04
+    else:
+        arcade.draw_text("*   *   *   *   *",32.76,y,(255,255,255),20)
+        y-=14.04
 arcade.finish_render()
 arcade.run()
