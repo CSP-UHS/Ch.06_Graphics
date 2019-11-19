@@ -192,14 +192,14 @@ arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 ##middle star
 # my_list =(
-#     (360, 190),
-#     (340, 190),
-#     (320, 201),
-#     (320, 230),
+#     (360, 160),
+#     (340, 160),
+#     (310, 180),
+#     (310, 220),
 #     (340, 240),
 #     (360, 240),
-#     (380, 230),
-#     (380, 200)
+#     (390, 220),
+#     (390, 180)
 #
 # )
 # arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
