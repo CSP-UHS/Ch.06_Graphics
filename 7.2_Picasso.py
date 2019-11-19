@@ -173,7 +173,7 @@ my_list = (   ### top left point
 )
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
-## left 2 tp
+# left 2 tp
 my_list = (   ### left 2 bp
     (390, 180),
     (390, 220),
@@ -182,12 +182,12 @@ my_list = (   ### left 2 bp
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 # left of bp
-
-my_list = (   ### left point
+my_list = (
     (360, 190),
     (380, 200),
     (390, 180)
 )
+
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 ##middle star
