@@ -183,9 +183,9 @@ arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
 
 # left of bp
 my_list = (
-    (360, 190),
-    (380, 200),
-    (390, 180)
+    (360, 160),
+    (390, 180),
+    (400, 150)
 )
 
 arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
