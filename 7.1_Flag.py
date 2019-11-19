@@ -17,7 +17,7 @@ for y in range(10,251,40):
     arcade.draw_rectangle_filled(247, y, 494, 20,(191,10,48))
 arcade.draw_lrtb_rectangle_filled(0, 197.6, 260, 120,(0,40,104))
 #Draw the stars
-y=245.96
+y=231
 for s in range(9):
     if s%2==0:
         arcade.draw_text("*   *   *   *   *   *",16.38, y,(255, 255, 255), 20)
