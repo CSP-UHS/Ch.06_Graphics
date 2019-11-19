@@ -131,7 +131,7 @@ my_list = (   ### Bottom point
     (360, 160),
     (350, 90)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 ## Second bottom left
 my_list = (   ###  secpmd Bottom point
@@ -139,7 +139,7 @@ my_list = (   ###  secpmd Bottom point
     (340, 160),
     (300, 150)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 ## third bp
 my_list = (   ### third bp
@@ -147,14 +147,14 @@ my_list = (   ### third bp
     (310, 180),
     (250, 200)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 ## left top
 my_list = (   ### left top point
     (340, 240),
     (310, 220),
     (300, 260)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 
 ### top
@@ -163,7 +163,7 @@ my_list = (   ### top point
     (340, 240),
     (350, 320)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 ## left of top point
 my_list = (   ### top left point
@@ -171,15 +171,15 @@ my_list = (   ### top left point
     (360, 240),
     (400, 260)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 # left 2 tp
 my_list = (   ### left 2 bp
     (390, 180),
     (390, 220),
-    (460, 200)
+    (450, 200)
 )
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
 # left of bp
 my_list = (
@@ -188,27 +188,44 @@ my_list = (
     (400, 150)
 )
 
-arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 
-##middle star
-# my_list =(
-#     (360, 160),
-#     (340, 160),
-#     (310, 180),
-#     (310, 220),
-#     (340, 240),
-#     (360, 240),
-#     (390, 220),
-#     (390, 180)
-#
-# )
-# arcade.draw_polygon_filled(my_list, arcade.color.BLACK)
-######STAR#######
-######STAR#######
-######STAR#######
-######STAR#######
+#middle star
+my_list =(
+    (360, 160),
+    (340, 160),
+    (310, 180),
+    (310, 220),
+    (340, 240),
+    (360, 240),
+    (390, 220),
+    (390, 180)
+
+)
+arcade.draw_polygon_filled(my_list, arcade.color.UROBILIN)
 ######STAR#######
 
+
+my_list =(
+    (350, 90),
+    (340, 160),
+    (300, 150),
+    (310, 180),
+    (250, 200),
+    (310, 220),
+    (300, 260),
+    (340, 240),
+    (350, 320),
+    (360, 240),
+    (400, 260),
+    (390, 220),
+    (450, 200),
+    (390, 180),
+    (400, 150),
+    (360, 160)
+
+)
+arcade.draw_polygon_outline(my_list, arcade.color.BLACK, 4)
 ################################################################
 ################################################################
 arcade.finish_render()
