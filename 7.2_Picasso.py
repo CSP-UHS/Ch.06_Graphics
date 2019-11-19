@@ -27,7 +27,7 @@ arcade.draw_circle_filled(150,150,125,(255,0,0))
 arcade.draw_circle_filled(150,150,100,(255,255,255))
 arcade.draw_circle_filled(150,150,75,(255,0,0))
 arcade.draw_circle_filled(150,150,50,(0,0,255))
-arcade.draw_
+arcade.draw_lines(point_list = (150, 200),(175, 175),(200, 140),(155, 145),(160, 110),(150, 120),(140,110),(255,255,255))
 
 arcade.finish_render()
 arcade.run()
