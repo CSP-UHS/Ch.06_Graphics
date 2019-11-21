@@ -17,10 +17,33 @@ for y in range(10,251,40):
     arcade.draw_rectangle_filled(247,y,494,20,(191, 10, 48))
 arcade.draw_rectangle_filled(99,190,198,140,(0, 40, 104))
 #draw the stars
-y=245
-for s in range(9):
-    if s%2==0:
-        arcade.draw_text("*   *   *   *   *   * ", 15, y,arcade.color.WHITE,20)
-        y-=14
+
+y=235
+for StarRows in range(9):
+    if StarRows%2==0:
+        x=16.38
+        for Star in range(6):
+            if Star==0:
+                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
+            else:
+                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
+            x+=32.76
+    y-=15
+
+y=220
+for StarRows in range(9):
+    if StarRows%2==0:
+        x=32.76
+        for Star in range(5):
+            if Star==0:
+                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
+            else:
+                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
+            x+=32.76
+    y-=15
+
+
+
+
 arcade.finish_render()
 arcade.run()
