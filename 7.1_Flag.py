@@ -30,8 +30,7 @@ for StarRows in range(9):
             else:
                 arcade.draw_text("*", x, y, arcade.color.WHITE, 20)
             x+=32.76
-            y+-=15
+            y+=15
 
 arcade.finish_render() #Runs Arcade
 arcade.run()
-
