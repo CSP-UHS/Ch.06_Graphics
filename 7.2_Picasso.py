@@ -15,19 +15,30 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 import arcade
-x=0
 arcade.open_window(300, 300, "Caps Sheild - Emma Moritz")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
-for x_offset in range(0,300,20):
-    arcade.draw_line(0 + x_offset, 0, 0 + x_offset, 300, arcade.color.NAVY_BLUE, 5)
-for y_offset in range(0, 300, 20):
-    arcade.draw_line(0, 0 + y_offset, 300, 0 + y_offset, arcade.color.NAVY_BLUE, 5)
+
+point_list=((150,130),
+            (130,140),
+            (130,165),
+            (170,165),
+            (170,140))
+
+for x in range(0,300,20):
+    arcade.draw_line(0 + x, 0, 0 + x, 300, arcade.color.NAVY_BLUE, 5)
+for y in range(0, 300, 20):
+    arcade.draw_line(0, 0 + y, 300, 0 + y, arcade.color.NAVY_BLUE, 5)
 arcade.draw_circle_filled(150,150,125,(255,0,0))
 arcade.draw_circle_filled(150,150,100,(255,255,255))
 arcade.draw_circle_filled(150,150,75,(255,0,0))
 arcade.draw_circle_filled(150,150,50,(0,0,255))
-arcade.draw_lines(point_list = (150, 200),(175, 175),(200, 140),(155, 145),(160, 110),(150, 120),(140,110),(255,255,255))
+arcade.draw_triangle_filled(135,165,150,200,165,165,(255,255,255))
+arcade.draw_triangle_filled(105,165,130,165,130,140,(255,255,255))
+arcade.draw_triangle_filled(195,165,170,165,170,135,(255,255,255))
+arcade.draw_triangle_filled(150,130,180,115,170,150,(255,255,255))
+arcade.draw_triangle_filled(150,130,120,115,130,150,(255,255,255))
+arcade.draw_polygon_filled(point_list,(255,255,255))
 
 arcade.finish_render()
 arcade.run()
