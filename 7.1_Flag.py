@@ -20,12 +20,18 @@ for y in range(10,251,40): #Red Stripes
 
 arcade.draw_rectangle_filled(99, 190, 198, 140, (0, 40, 104)) #Top Left Blue Box
 
-TextHeight= 245 #White Stars                                        Problem on this part
+y = 235 #White Stars
 for StarRows in range(9):
     if StarRows%2==0:
-        arcade.draw_text("*  *  *  *  *  *", 15, TextHeight, arcade.color.WHITE)
-    TextHeight-=13
+        x=16.38
+        for Star in range(6):
+            if Star==0:
+                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
+            else:
+                arcade.draw_text("*", x, y, arcade.color.WHITE, 20)
+            x+=32.76
+            y+-=15
 
-arcade.finish_render() #More Arcade Setup
+arcade.finish_render() #Runs Arcade
 arcade.run()
 
