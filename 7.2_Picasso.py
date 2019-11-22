@@ -14,7 +14,33 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
-
-
-
-
+import arcade
+arcade.open_window(500,400, "Julie Pham")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+#grid
+for x_offset in range(0,610,20):
+    arcade.draw_rectangle_filled(0+x_offset,60,1,800,arcade.color.BLACK)
+for y_offset in range(0,610,20):
+    arcade.draw_rectangle_filled(300, 0+y_offset, 800, 1, arcade.color.BLACK)
+#neck line 1
+arcade.draw_line(500,320,343,290,arcade.color.BLACK,1)
+#neck line 2
+arcade.draw_line(500,280,357,250,arcade.color.BLACK,1)
+#left nostril
+arcade.draw_circle_outline(300,240,5,arcade.color.BLACK,1)
+#right nostril
+arcade.draw_circle_outline(340,240,5,arcade.color.BLACK,1)
+#nose
+arcade.draw_ellipse_outline(320,240,40,25,arcade.color.BLACK,1)
+#head
+arcade.draw_arc_outline(320,280,27,30,arcade.color.BLACK,-40, 220)
+#1
+arcade.draw_arc_outline(380,287,20,15,arcade.color.BLACK,150,420)
+#2
+arcade.draw_arc_outline(430,265,20,20,arcade.color.BLACK,18,190)
+#3
+# arcade.draw_ellipse_outline(450,307,25,15,arcade.color.BLACK)
+arcade.draw_arc_outline(450,307,25,15,arcade.color.BLACK,40, 190)
+arcade.finish_render()
+arcade.run()
