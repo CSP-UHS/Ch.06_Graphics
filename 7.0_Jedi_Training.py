@@ -21,7 +21,7 @@ for z in range(27):
     arcade.draw_line(XValue, 400, XValue, 0, arcade.color.BLACK, 1)
     XValue += 19.23
 
-#Left off here, add in the obects now.
+#Left off here, add in the obects now. 
 
 arcade.finish_render() #Run Arcade
 arcade.run()
