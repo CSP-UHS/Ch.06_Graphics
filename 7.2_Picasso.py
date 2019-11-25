@@ -14,7 +14,19 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
+arcade.open_window(500,400,"My Picasso Picture")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+arcade.draw_circle_filled(250,220,100,arcade.color.YELLOW)
+arcade.draw_circle_filled(210,250,5,arcade.color.BLACK)
+arcade.draw_circle_filled(290,250,5,arcade.color.BLACK)
+arcade.draw_arc_outline(250,170,100,40,arcade.color.BLACK,180,360)
+x_offset=180
+for i in range(8):
+    arcade.draw_line(x_offset,170,x_offset,190,arcade.color.BLACK)
+    x_offset+=20
 
-
-
+arcade.finish_render()
+arcade.run()
 
