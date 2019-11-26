@@ -41,6 +41,6 @@ arcade.draw_arc_outline(380,287,20,15,arcade.color.BLACK,150,420)
 arcade.draw_arc_outline(430,265,20,20,arcade.color.BLACK,18,190)
 #3
 # arcade.draw_ellipse_outline(450,307,25,15,arcade.color.BLACK)
-arcade.draw_arc_outline(450,307,25,15,arcade.color.BLACK,40, 190)
+arcade.draw_arc_outline(450,307,25,15,arcade.color.BLACK,190, 400)
 arcade.finish_render()
 arcade.run()
