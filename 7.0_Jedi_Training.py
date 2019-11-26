@@ -7,24 +7,35 @@ The picture is 500px wide and 400px tall. Look up ARC in the documentation to do
 '''
 
 import arcade
-arcade.open_window(500, 400, "Ch.7 Jedi Training")
-arcade.set_background_color(arcade.color.ALMOND)
+arcade.open_window(500, 400, "Test")
+arcade.set_background_color(arcade.color.BLACK)
 arcade.start_render()
 x_offset=0
 for i in range(25):
-    arcade.draw_line(x_offset,0,x_offset,400,arcade.color.BLACK)
+    arcade.draw_line(x_offset,0,x_offset,400,arcade.color.WHITE)
     x_offset+=20
 y_offset=0
 for i in range(20):
-    arcade.draw_line(0,y_offset,500,y_offset,arcade.color.BLACK)
+    arcade.draw_line(0,y_offset,500,y_offset,arcade.color.WHITE)
     y_offset+=20
-arcade.draw_rectangle_filled(50,370,60,20,arcade.color.PHLOX)
-arcade.draw_ellipse_filled(100,100,60,20,arcade.color.AMBER)
-arcade.draw_line(80,20,120,60,arcade.color.BLUE)
-arcade.draw_circle_filled(250,220,40,arcade.color.WISTERIA)
-arcade.draw_text("I love you. I know.",20,180,arcade.color.BRICK_RED,20)
-arcade.draw_point(460,10,arcade.color.RED,5)
-arcade.draw_rectangle_filled(200,260,40,20,arcade.color.BLUSH,45)
-arcade.draw_arc_filled(400,320,60,60,arcade.color.YELLOW,30,330,0)
+arcade.draw_circle_filled(250,250,80,arcade.color.ASH_GREY)
+arcade.draw_rectangle_filled(250,160,160,195,arcade.color.WHITE)
+arcade.draw_rectangle_filled(190,53,40,23,arcade.color.WHITE)
+arcade.draw_line(170,40,160,20,arcade.color.WHITE,5)
+arcade.draw_rectangle_filled(250,310,20,40,arcade.color.DARK_BLUE)
+arcade.draw_circle_filled(250,310,10,arcade.color.CHARTREUSE)
+arcade.draw_rectangle_filled(195,280,20,30,arcade.color.DARK_BLUE)
+arcade.draw_ellipse_filled(230,280,10,15,arcade.color.DARK_BLUE)
+arcade.draw_ellipse_filled(270,275,20,15,arcade.color.DARK_BLUE)
+arcade.draw_circle_filled(270,275,10,arcade.color.RED)
+arcade.draw_rectangle_filled(250,260,160,10,arcade.color.DARK_BLUE)
+arcade.draw_rectangle_filled(305,280,20,30,arcade.color.DARK_BLUE)
+arcade.draw_rectangle_filled(250,65,160,10,arcade.color.DARK_BLUE)
+# arcade.draw_circle_filled()
+y_offset=245
+for i in range (3):
+    arcade.draw_rectangle_filled(250,y_offset,80,10,arcade.color.DARK_BLUE)
+    y_offset-=20
+arcade.draw_ellipse_filled(210,150,10,40,arcade.color.DARK_BLUE)
 arcade.finish_render()
 arcade.run()
