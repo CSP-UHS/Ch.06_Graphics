@@ -37,7 +37,7 @@ for star_rows in range(9):
 
                 arcade.draw_text("*   *   *   *   *  *",32,y, arcade.color.WHITE,20)
             else:
-                arcade.draw_text("*   *   *   *   *",x,y, arcade.color.WHITE,20)
+                arcade.draw_text("   *   *   *   *   *",x,y, arcade.color.WHITE,20)
             y-=15
 
 arcade.finish_render()
