@@ -14,7 +14,10 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
-
-
-
-
+import arcade
+arcade.open_window(500,500,"Rowdy Alexander")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+arcade.draw_P
+arcade.finish_render()
+arcade.run()
