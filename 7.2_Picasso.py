@@ -27,7 +27,18 @@ arcade.draw_circle_filled(80,200,15,arcade.color.BLACK)
 arcade.draw_circle_filled(215,200,15,arcade.color.BLACK)
 arcade.draw_ellipse_filled(150,130,80,20,arcade.color.PINK)
 arcade.draw_ellipse_filled(150,130,40,10,arcade.color.CANDY_PINK)
-arcade.draw_text("Croak",20,60,arcade.color.DARK_GREEN,12,)
+x=50
+y=40
+croak = 0
+for i in range(5):
+    if croak==0:
+        arcade.draw_text("Croak",x,y,arcade.color.DARK_GREEN,12)
+        croak+=1
+    else:
+        arcade.draw_text("Croak", x, y, arcade.color.DARK_GREEN, 12)
+        x+=50
+
+
 arcade.finish_render()
 arcade.run()
 
