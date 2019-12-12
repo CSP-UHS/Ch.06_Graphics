@@ -25,13 +25,18 @@ x_offset=0
 y_offset=0
 for i in range(30):
     x_offset+=20
-    arcade.draw_line(x_offset,0,x_offset,600,arcade.color.BLACK)  #draw the vertical lines
+    arcade.draw_line(x_offset,0,x_offset,600,arcade.color.GENERIC_VIRIDIAN,6)  #draw the vertical lines
 for i in range(30):
     y_offset+=20
-    arcade.draw_line(0,y_offset,600,y_offset,arcade.color.BLACK)  #draw the horizontal lines
+    arcade.draw_line(0,y_offset,600,y_offset,arcade.color.GENERIC_VIRIDIAN,6)  #draw the horizontal lines
+arcade.draw_circle_filled(300,120,160,arcade.color.GO_GREEN,)   #draw the circle
+arcade.draw_rectangle_filled(300,10,110,20,arcade.color.WHITE)
 arcade.draw_rectangle_outline(300,10,110,20,arcade.color.BLACK,5) #midle bottom block
+arcade.draw_rectangle_filled(318,10,10,20,arcade.color.WHITE)
 arcade.draw_rectangle_outline(318,10,10,20,arcade.color.BLACK,5)  #little block on the right
+arcade.draw_rectangle_filled(282,10,10,20,arcade.color.WHITE)
 arcade.draw_rectangle_outline(282,10,10,20,arcade.color.BLACK,5)    #little block on the left
+arcade.draw_rectangle_filled(300,125,44,210,arcade.color.WHITE)
 arcade.draw_rectangle_outline(300,125,44,210,arcade.color.BLACK,5)  #biggest block behind
 arcade.draw_rectangle_filled(300,45,90,50,arcade.color.WHITE)
 arcade.draw_rectangle_outline(300,45,90,50,arcade.color.BLACK,5)    #big middle block
@@ -46,7 +51,7 @@ arcade.draw_rectangle_outline(319,200,20,40,arcade.color.BLACK,5)    #Right bloc
 arcade.draw_rectangle_filled(300,235,28,10,arcade.color.WHITE)
 arcade.draw_rectangle_outline(300,235,28,10,arcade.color.BLACK,5)   #Top block
 arcade.draw_line(300,240,300,280,arcade.color.BLACK,5)  #top line
-
+arcade.draw_text("$",227,360,arcade.color.GOLD,200) #dollar sign
 
 
 arcade.finish_render()
