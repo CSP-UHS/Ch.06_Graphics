@@ -19,26 +19,15 @@ arcade.draw_rectangle_filled(99,190,198,140,(0,40,104))
 
 #variables
 y=235
-numstars = 6
-for star_rows in range(9):
-    if star_rows%2==0:
-        x = 13
-        for star in range(6):
-            if star ==0:
-                arcade.draw_text("*",x,y,arcade.color.WHITE,20)
-        else:
-            arcade.draw_text("*",x,y,arcade.color.WHITE,20)
-        x+=35
 
+
+for star in range(9):
+    if star % 2 == 0:
+
+        arcade.draw_text("*   *   *   *   *   *",15,y, arcade.color.WHITE,20)
     else:
-        x = 25
-        for star in range(5):
-            if star==0:
-
-                arcade.draw_text("*   *   *   *   *  *",32,y, arcade.color.WHITE,20)
-            else:
-                arcade.draw_text("   *   *   *   *   *",x,y, arcade.color.WHITE,20)
-            y-=15
+        arcade.draw_text("*   *   *   *   *",30,y, arcade.color.WHITE,20)
+    y-=15
 
 arcade.finish_render()
 arcade.run()
