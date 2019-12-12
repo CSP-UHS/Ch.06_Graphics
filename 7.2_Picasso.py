@@ -14,7 +14,36 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
+arcade.open_window(400,400,"Steelers Logo")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
 
+#foundation
+arcade.draw_circle_outline(200,200,150,(16,24,32),10)
+arcade.draw_circle_filled(200,200,150,(165,172,175))
+arcade.draw_circle_filled(200,200,125,arcade.color.WHITE)
+arcade.draw_text("Steelers",90,200,(16,24,32),22,2000,"left",'Impact')
 
+#diamonds
+arcade.draw_polygon_filled([(260,140),(320,200),(260,260),(200,200)],(198,12,48)) #red
+arcade.draw_circle_filled(200,262.5,62.5,arcade.color.WHITE)
+arcade.draw_circle_filled(320,137.5,62.5,arcade.color.WHITE)
+arcade.draw_circle_filled(320,262.5,62.5,arcade.color.WHITE)
+arcade.draw_circle_filled(200,140,62.5,arcade.color.WHITE)
+arcade.draw_polygon_filled([(200,200),(260,260),(200,320),(140,260)],(255,182,18)) #yellow
+arcade.draw_polygon_filled([(200,80),(260,140),(200,200),(140,140)],(0,48,135)) #blue
 
+#THE NEXT STEP IS TO DRAW CIRCLES SO THAT THE POLYGONS TURN INTO DIAMONDS
+
+#gridlines
+
+for x_offset in range(0,400,20):
+    arcade.draw_line(0+x_offset,0,0+x_offset,400,(16,24,32),1)
+
+for y_offset in range(0,400,20):
+    arcade.draw_line(0,0+y_offset,400,0+y_offset,(16,24,32),1)
+
+arcade.finish_render()
+arcade.run()
 
