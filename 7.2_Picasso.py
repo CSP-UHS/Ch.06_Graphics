@@ -15,7 +15,7 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 import arcade
-arcade.open_window(400,400,"Steelers Logo")
+arcade.open_window(400,400,"Cal Watson")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 
