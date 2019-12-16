@@ -32,9 +32,9 @@ for i in range (25):
 
 
 arcade.draw_rectangle_filled(70,450,80,20, arcade.color.PHLOX)
-arcade.draw_line(100,40,120,60, arcade.color.BLACK)
+arcade.draw_line(100,40,140,60, arcade.color.BLACK)
 arcade.draw_text("I love you. I know",20,230, arcade.color.BRICK_RED,20)
-arcade.draw_ellipse_filled(100,100,80,20, arcade.color.AMBER)
+arcade.draw_ellipse_filled(100,100,60,20, arcade.color.AMBER)
 arcade.draw_circle_filled(260,270,45,arcade.color.WISTERIA)
 arcade.draw_arc_filled(400,420,60,60,arcade.color.YELLOW,30,330)
 arcade.draw_rectangle_filled(200,320,40,20,arcade.color.BLUSH,45)
