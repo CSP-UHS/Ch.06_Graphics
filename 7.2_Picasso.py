@@ -1,5 +1,5 @@
 '''
-PICASSO PROJECT
+PYCASSO PROJECT
 ---------------
 Your job is to make a cool picture.
 You must use multiple colors.
@@ -14,7 +14,46 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
+arcade.open_window(500,500,"Zach Cobb")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+arcade.draw_ellipse_filled(250,250,150,220, arcade.color.GREEN)
+arcade.draw_ellipse_filled(320,320,40,60, arcade.color.BLACK,-35)
+arcade.draw_ellipse_filled(180,320,40,60,arcade.color.BLACK,35)
+arcade.draw_parabola_outline(200,50,300,50, arcade.color.BLACK,2)
+arcade.draw_ellipse_filled(270,240,5,10, arcade.color.BLACK,-25)
+arcade.draw_ellipse_filled(230,240,5,10,arcade.color.BLACK,25)
 
 
+
+
+# variable
+x1 = 0
+y1 = 500
+x2 = 500
+y2 = 500
+for i in range (25):
+    arcade.draw_line(x1,y1,x2,y2, arcade.color.BLACK,1)
+    y2-=20
+    y1-=20
+
+#variables 2
+a1=0
+b1=500
+a2=0
+b2=0
+for i in range (25):
+    arcade.draw_line(a1,b1,a2,b2,arcade.color.BLACK,1)
+    a1+=20
+    a2+=20
+
+
+
+
+
+
+arcade.finish_render()
+arcade.run()
 
 
