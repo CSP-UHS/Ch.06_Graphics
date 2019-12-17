@@ -24,8 +24,11 @@ arcade.draw_ellipse_filled(180,320,40,60,arcade.color.BLACK,35)
 arcade.draw_parabola_outline(200,50,300,50, arcade.color.BLACK,2)
 arcade.draw_ellipse_filled(270,240,5,10, arcade.color.BLACK,-25)
 arcade.draw_ellipse_filled(230,240,5,10,arcade.color.BLACK,25)
+arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
+'''
+arcade.draw_rectangle_filled(180,460,15,45,arcade.color.GREEN,25)
 
-
+'''
 
 
 # variable
