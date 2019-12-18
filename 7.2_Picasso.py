@@ -16,19 +16,24 @@ When you are finished Pull Request your file to your instructor.
 '''
 import arcade
 arcade.open_window(500,500,"Zach Cobb")
-arcade.set_background_color(arcade.color.WHITE)
+arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
 arcade.start_render()
+#alien
+
 arcade.draw_ellipse_filled(250,250,150,220, arcade.color.GREEN)
 arcade.draw_ellipse_filled(320,320,40,60, arcade.color.BLACK,-35)
 arcade.draw_ellipse_filled(180,320,40,60,arcade.color.BLACK,35)
 arcade.draw_parabola_outline(200,50,300,50, arcade.color.BLACK,2)
+#nose
 arcade.draw_ellipse_filled(270,240,5,10, arcade.color.BLACK,-25)
 arcade.draw_ellipse_filled(230,240,5,10,arcade.color.BLACK,25)
-arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
-'''
-arcade.draw_rectangle_filled(180,460,15,45,arcade.color.GREEN,25)
 
-'''
+#antennas
+arcade.draw_rectangle_filled(180,460,15,45,arcade.color.GREEN,25)
+arcade.draw_rectangle_filled(320,460,15,45,arcade.color.GREEN,-25)
+arcade.draw_circle_filled(170,480,10,arcade.color.RED)
+arcade.draw_circle_filled(330,480,10,arcade.color.RED)
+
 
 
 # variable
