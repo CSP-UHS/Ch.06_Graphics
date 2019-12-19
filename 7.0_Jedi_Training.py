@@ -21,9 +21,13 @@ for z in range(27):
     arcade.draw_line(XValue, 400, XValue, 0, arcade.color.BLACK, 1)
     XValue += 19.23
 
-#Left off here, add in the obects now. 
+arcade.draw_xywh_rectangle_filled(20,362,58,18,arcade.color.PHLOX) #Top left purple rectangle
+
+arcade.draw_arc_filled(400,325,60,60,arcade.color.YELLOW,30,330,0) #Pacman
+
+arcade.draw_rectangle_filled(196,265,40,20,arcade.color.BLUSH,45) #Pink angled rectangle
+
+arcade.draw_ellipse_filled(98,96,60,20,arcade.color.AMBER,0,128) #Bottom left elipse
 
 arcade.finish_render() #Run Arcade
 arcade.run()
-
-#YEEEEEEEEEEEEEEEEEEEET
