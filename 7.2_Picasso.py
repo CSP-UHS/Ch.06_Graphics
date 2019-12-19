@@ -16,11 +16,11 @@ When you are finished Pull Request your file to your instructor.
 '''
 
 import arcade #Setup Arcade
-arcade.open_window(1000,1000, "Danny Halstead")
+arcade.open_window(1280,720, "Danny Halstead")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 
-#write stuff here
+#add stuff here
 
 arcade.finish_render() #Run Arcade
 arcade.run()
