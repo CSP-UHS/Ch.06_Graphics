@@ -15,4 +15,12 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
-print("Testing")
+import arcade #Setup Arcade
+arcade.open_window(1000,1000, "Danny Halstead")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+
+#write stuff here
+
+arcade.finish_render() #Run Arcade
+arcade.run()
