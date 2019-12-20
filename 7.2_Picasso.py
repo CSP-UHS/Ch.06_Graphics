@@ -15,12 +15,19 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
+
 import arcade #Setup Arcade
 arcade.open_window(1280,720, "Danny Halstead")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 
-#add stuff here
+arcade.draw_circle_filled(640,360,250,arcade.color.GRAY) #BMW Logo
+arcade.draw_circle_filled(640,360,240,arcade.color.BLACK)
+arcade.draw_circle_filled(640,360,150,arcade.color.GRAY)
+arcade.draw_circle_filled(640,360,140,arcade.color.WHITE)
+arcade.draw_ellipse_filled(640,360,60,20,arcade.color.AMBER) #Change This line
 
 arcade.finish_render() #Run Arcade
 arcade.run()
+
+
