@@ -15,23 +15,22 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
-
+#BMW Logo
 import arcade #Setup Arcade
 arcade.open_window(1280,720, "Danny Halstead")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 
-arcade.draw_text("BMW Logo",500,650,arcade.color.PURPLE_MOUNTAIN_MAJESTY,20,220,"left","Ariel", False,False,"left","baseline" ,0)
+arcade.draw_text("BMW Logo",500,650,arcade.color.PURPLE_MOUNTAIN_MAJESTY,20,220,"left","Ariel", False,False,"left","baseline" ,0) #Text at Top
 
-arcade.draw_circle_filled(640,360,250,arcade.color.GRAY) #BMW Logo
+arcade.draw_circle_filled(640,360,250,arcade.color.GRAY) #Circles from outer to inner, white inner part is circle but blue inner part is not
 arcade.draw_circle_filled(640,360,240,arcade.color.BLACK)
 arcade.draw_circle_filled(640,360,150,arcade.color.GRAY)
 arcade.draw_circle_filled(640,360,140,arcade.color.WHITE)
 
-arcade.draw_arc_filled(640,360,140,140,arcade.color.BLUE,0,90,0)
-arcade.draw_arc_filled(640,360,140,140,arcade.color.BLUE,0,90,180)
+for i in range(0,181,180):
+    arcade.draw_arc_filled(640,360,140,140,arcade.color.BLUE,0,90,i) #Blue Inner Quartercircles
+# I know that may be the laziest loop in existance but I did et all the way through this before realizing that I had to have a loop so...
 
 arcade.finish_render() #Run Arcade
 arcade.run()
-
-
