@@ -17,7 +17,7 @@ When you are finished Pull Request your file to your instructor.
 
 import arcade
 
-arcade.open_window(800, 600, "El Barn y Tractor")
+arcade.open_window(800, 600, "Nha Tran")
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
@@ -66,6 +66,12 @@ arcade.draw_circle_filled(650, 90, 30, arcade.color.BLACK)
 arcade.draw_circle_filled(650, 90, 25, arcade.color.BLACK_OLIVE)
 arcade.draw_circle_filled(650, 90, 18, arcade.color.OLD_LACE)
 arcade.draw_circle_filled(650, 90, 5, arcade.color.RED)
+
+for i in range(2):
+    for x in range(490,570,20):
+        arcade.draw_circle_filled(x+(i*150),460,25,arcade.color.WHITE_SMOKE)
+    for x in range(500,560,20):
+        arcade.draw_circle_filled(x+(i*150),480,25,arcade.color.WHITE_SMOKE)
 
 arcade.finish_render()
 arcade.run()
