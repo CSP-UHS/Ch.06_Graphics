@@ -19,7 +19,7 @@ When you are finished Pull Request your file to your instructor.
 
 
 import arcade
-arcade.open_window(500,400,"Jedi Training")
+arcade.open_window(500,400,"Catherine Clifford")
 arcade.set_background_color(arcade.color.CHESTNUT)
 arcade.start_render()
 
