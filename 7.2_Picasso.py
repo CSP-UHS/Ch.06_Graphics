@@ -21,11 +21,15 @@ arcade.open_window(1280,720, "Danny Halstead")
 arcade.set_background_color(arcade.color.WHITE)
 arcade.start_render()
 
+arcade.draw_text("BMW Logo",500,650,arcade.color.PURPLE_MOUNTAIN_MAJESTY,20,220,"left","Ariel", False,False,"left","baseline" ,0)
+
 arcade.draw_circle_filled(640,360,250,arcade.color.GRAY) #BMW Logo
 arcade.draw_circle_filled(640,360,240,arcade.color.BLACK)
 arcade.draw_circle_filled(640,360,150,arcade.color.GRAY)
 arcade.draw_circle_filled(640,360,140,arcade.color.WHITE)
-arcade.draw_ellipse_filled(640,360,60,20,arcade.color.AMBER) #Change This line
+
+arcade.draw_arc_filled(640,360,140,140,arcade.color.BLUE,0,90,0)
+arcade.draw_arc_filled(640,360,140,140,arcade.color.BLUE,0,90,180)
 
 arcade.finish_render() #Run Arcade
 arcade.run()
