@@ -16,15 +16,26 @@ When you are finished Pull Request your file to your instructor.
 '''
 import arcade
 arcade.open_window(500,500,"Rowdy Alexander")
-arcade.set_background_color(arcade.color.WHITE)
+arcade.set_background_color(arcade.color.BLACK)
 arcade.start_render()
-arcade.draw_line(100,250,125,325,arcade.color.YELLOW,3)
-arcade.draw_line(350,250,375,325,arcade.color.RED,3)
-arcade.draw_line(125,325,200,325,arcade.color.PURPLE,3)
-arcade.draw_line(200,325,200,345,arcade.color.BLACK,3)
-arcade.draw_line(275,250,350,250,arcade.color.BLUE,3)
-arcade.draw_line(275,325,275,345,arcade.color.AMBER,3)
-arcade.draw_line(375,325,275,325,arcade.color.ORANGE,3)
-arcade.draw_line(200,)
+arcade.draw_line(100,250,125,325,arcade.color.SILVER,4)
+arcade.draw_line(350,250,375,325,arcade.color.SILVER,4)
+arcade.draw_line(125,325,200,325,arcade.color.SILVER,4)
+arcade.draw_line(200,325,200,345,arcade.color.SILVER,4)
+arcade.draw_line(275,250,350,250,arcade.color.SILVER,4)
+arcade.draw_line(275,325,275,345,arcade.color.SILVER,4)
+arcade.draw_line(375,325,275,325,arcade.color.SILVER,4)
+arcade.draw_line(200,345,275,345,arcade.color.SILVER,4)
+arcade.draw_line(100,250,200,250,arcade.color.SILVER,4)
+arcade.draw_line(200,250,200,230,arcade.color.SILVER,4)
+arcade.draw_line(275,250,275,230,arcade.color.SILVER,4)
+arcade.draw_line(200,230,275,230,arcade.color.SILVER,4)
+for x in range(25):
+    x+=25
+    arcade.draw_line(x,0,x,500,arcade.color.WHITE,3)
+for x in range(25):
+        x += 450
+        arcade.draw_line(x, 0, x, 500, arcade.color.WHITE, 3)
 arcade.finish_render()
+
 arcade.run()
