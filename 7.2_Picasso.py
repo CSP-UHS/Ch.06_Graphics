@@ -15,6 +15,11 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 import arcade
+import random
+
+
+random.randint(420,480)
+
 arcade.open_window(500,500,"Zach Cobb")
 arcade.set_background_color(arcade.color.STAR_COMMAND_BLUE)
 arcade.start_render()
@@ -33,6 +38,13 @@ arcade.draw_rectangle_filled(180,460,15,45,arcade.color.GREEN,25)
 arcade.draw_rectangle_filled(320,460,15,45,arcade.color.GREEN,-25)
 arcade.draw_circle_filled(170,480,10,arcade.color.RED)
 arcade.draw_circle_filled(330,480,10,arcade.color.RED)
+# stars
+n=0
+for i in range(5):
+    arcade.draw_circle_filled(random.randint(20,60),random.randint(20,480),random.randint(2,10),arcade.color.WHITE)
+    arcade.draw_circle_filled(random.randint(420,480),random.randint(20,480),random.randint(2,10),arcade.color.WHITE)
+
+
 
 
 
