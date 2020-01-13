@@ -20,7 +20,7 @@ for i in range (25):
     arcade.draw_line(x1,y1,x2,y2, arcade.color.BLACK,1)
     y2-=20
     y1-=20
-#variables 2
+#variabless 2
 a1=0
 b1=500
 a2=0
