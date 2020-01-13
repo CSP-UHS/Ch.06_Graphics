@@ -33,7 +33,7 @@ arcade.draw_parabola_outline(200,50,300,50, arcade.color.BLACK,2)
 arcade.draw_ellipse_filled(270,240,5,10, arcade.color.BLACK,-25)
 arcade.draw_ellipse_filled(230,240,5,10,arcade.color.BLACK,25)
 
-#antennass
+#antennas
 arcade.draw_rectangle_filled(180,460,15,45,arcade.color.GREEN,25)
 arcade.draw_rectangle_filled(320,460,15,45,arcade.color.GREEN,-25)
 arcade.draw_circle_filled(170,480,10,arcade.color.RED)
