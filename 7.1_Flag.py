@@ -10,29 +10,17 @@ We will have a competition to see who can make this flag in the least lines of c
 The record is 16! You will have to use some loops to achieve this.
 '''
 import arcade
-y = 260
-y1 = y
-y2 = (y-(0.054*y)-20)
-x = 1.9*y
-arcade.open_window(494, y, "The Stars and Stripes")
+arcade.open_window(494, 260, "The Stars and Stripes")
 arcade.start_render()
 for i in range(7):
-    arcade.draw_rectangle_filled(x/2, y1-10, x, 20, arcade.color.RED)
-    arcade.draw_rectangle_filled(x/2, (y1-20)-10, x, 20, arcade.color.WHITE)
-    y1 -= 40
-arcade.draw_rectangle_filled(0+((0.76*y)/2), y-(((7*y)/13)/2), 0.76*y, (7*y)/13, arcade.color.BLUE)
-for i in range(5):
-    x2 = ((0.063*y)-10)
-    for l in range(6):
-        arcade.draw_text("*", x2, y2, arcade.color.WHITE, 20)
-        x2 += 2*(0.063*y)
-    y2 -= 2*(0.054*y)
-y2 = (y-(0.054*y)-20)
-for h in range(4):
-    x2 = ((0.063 * y) - 10)
-    for m in range(5):
-        arcade.draw_text("*", x2 + (0.063 * y), y2 - (0.054 * y), arcade.color.WHITE, 20)
-        x2 += 2 * (0.063 * y)
-    y2 -= 2 * (0.054 * y)
+    arcade.draw_rectangle_filled(247, 10+(20*(i*2)), 494, 20, (191, 13, 62))    # I got these colors off the internet
+    arcade.draw_rectangle_filled(247, 30+(20*(i*2)), 494, 20, (255, 255, 255))  # they are not the same ones provided
+arcade.draw_rectangle_filled(98.8, 190, 197.6, 140, (10, 49, 97))               # I could convert them if I had to
+for i in range(0, 5, 1):                                                        # but I don't want to
+    for l in range(0, 6, 1):
+        arcade.draw_text("*", 11.38+(16.38*l*2), 225.96-(14.03*i*2), arcade.color.WHITE, 20)
+for i in range(0, 4, 1):
+    for l in range(0, 5, 1):
+        arcade.draw_text("*", 27.76+(16.38*l*2), 211.92-(14.03*i*2), arcade.color.WHITE, 20)
 arcade.finish_render()
 arcade.run()
