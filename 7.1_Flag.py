@@ -25,8 +25,14 @@ for i in range(5):
     x2 = ((0.063*y)-10)
     for l in range(6):
         arcade.draw_text("*", x2, y2, arcade.color.WHITE, 20)
-        arcade.draw_text("*", x2+(0.063*y), y2-(y-(0.054*y)), arcade.color.WHITE, 20)
         x2 += 2*(0.063*y)
-    y2 -= 20
+    y2 -= 2*(0.054*y)
+y2 = (y-(0.054*y)-20)
+for h in range(4):
+    x2 = ((0.063 * y) - 10)
+    for m in range(5):
+        arcade.draw_text("*", x2 + (0.063 * y), y2 - (0.054 * y), arcade.color.WHITE, 20)
+        x2 += 2 * (0.063 * y)
+    y2 -= 2 * (0.054 * y)
 arcade.finish_render()
 arcade.run()
