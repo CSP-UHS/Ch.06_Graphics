@@ -19,8 +19,26 @@ for xoffset in range(10,520,40):
 
 arcade.draw_rectangle_filled(98.8,190,197.6,140,(0,40,104))
 
-arcade.draw_polygon_filled()
 
+for xoffset in range(0,192,32):
+        arcade.draw_text("*",16.38+xoffset,128.08,(255,255,255))
+for xoffset in range(0,192,32):
+        arcade.draw_text("*",16.38+xoffset,156.16,(255,255,255))
+for xoffset in range(0,192,32):
+        arcade.draw_text("*",16.38+xoffset,184.24,(255,255,255))
+for xoffset in range(0,192,32):
+        arcade.draw_text("*",16.38+xoffset,212.32,(255,255,255))
+for xoffset in range(0,192,32):
+        arcade.draw_text("*",16.38+xoffset,240,(255,255,255))
+
+for xoffset in range(0,160,32):
+    arcade.draw_text("*",32.76+xoffset,140.08,(255,255,255))
+for xoffset in range(0,160,32):
+    arcade.draw_text("*",32.76+xoffset,168.16,(255,255,255))
+for xoffset in range(0,160,32):
+    arcade.draw_text("*",32.76+xoffset,196.24,(255,255,255))
+for xoffset in range(0,160,32):
+    arcade.draw_text("*",32.76+xoffset,224.32,(255,255,255))
 
 
 arcade.finish_render()
