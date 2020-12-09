@@ -13,7 +13,8 @@ import arcade
 arcade.open_window(494,260,"The Stars and Stripes")
 arcade.set_background_color((255,255,255))
 arcade.start_render()
-arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color.AERO_BLUE)
+arcade.draw_rectangle_filled(246, 250, 494, 20, (191,10,48))
+arcade.draw_rectangle_filled(90, 200, 197.6, 140, (0,40,104))
 
 arcade.finish_render()
 arcade.run()
