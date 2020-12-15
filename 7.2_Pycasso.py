@@ -14,7 +14,63 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
+import random
+arcade.open_window(500, 550, "Alex Mears")
+arcade.set_background_color(arcade.color.BLACK)
 
+arcade.start_render()
+color_list = (arcade.color.WHITE, arcade.color.RED, arcade.color.BLUE, arcade.color.ORANGE, arcade.color.GREEN,
+              arcade.color.YELLOW)
 
+x = 255     # Drawing lower right cubes
+y = 253
+y1 = y
+a = 65
+b = 70
+c = 36
+for l in range(4):
+    for i in range(3):
+        square_list = ((x, y1), (x + a, y1 + c), (x + a, (y1 + c) - b), (x, y1 - b))
+        arcade.draw_polygon_filled(square_list, random.choice(color_list))
+        x += a + 9
+        y1 += c + 5
+    y1 = y
+    x = 255
+    y -= b + 10
 
+x = 245     # Drawing lower left cubes
+y = 253
+y1 = y
+a = -65
+b = 70
+c = 36
+for l in range(4):
+    for i in range(3):
+        square_list = ((x, y1), (x + a, y1 + c), (x + a, (y1 + c) - b), (x, y1 - b))
+        arcade.draw_polygon_filled(square_list, random.choice(color_list))
+        x += a - 9
+        y1 += c + 5
+    y1 = y
+    x = 245
+    y -= b + 10
 
+x = 200
+y = 115
+x1 = 250
+y1 = 260
+for l in range(3):
+    x2 = x1
+    y2 = y1
+    for i in range(3):
+        top_box = ((x2, y2), (x2 - x / 3, y2 + y / 3), (x2, y2 + 2 * y / 3), (x2 + x / 3, y2 + y / 3))
+        arcade.draw_polygon_filled(top_box, random.choice(color_list))
+        x2 += 75
+        y2 += 43
+    x1 -= 75
+    y1 += 42
+
+arcade.draw_text("Ted copied me", 5, 0, arcade.color.WHITE, 24, 500)
+
+arcade.finish_render()
+arcade.run()
