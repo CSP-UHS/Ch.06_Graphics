@@ -1,4 +1,4 @@
-#Sign your name:________________
+#Sign your name:_Jacob Walters_______________
 
 '''
 Recreate, exactly the Test Picture from the website. The arcade colors used in this picture in no particular order are:
@@ -30,7 +30,7 @@ arcade.draw_ellipse_filled(460,10,5,5,arcade.color.RED)
 point_list=((195,240),(220,265),(205,280),(180,255))
 arcade.draw_polygon_filled(point_list,arcade.color.BLUSH)
 
-arcade.draw_arc_filled(520,320,120,120,arcade.color.YELLOW)
+arcade.draw_arc_filled(400,320,120,120,arcade.color.YELLOW,25,335)
 
 arcade.finish_render()
 arcade.run()
