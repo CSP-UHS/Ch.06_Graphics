@@ -15,6 +15,11 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
-
-
-
+list = [0]
+tuple = (20, list, 20)
+for loop in range(20):
+    print(tuple)
+    list[0] += 1
+print(tuple)
+x = 5
+print(type(x))
