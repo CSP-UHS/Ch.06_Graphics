@@ -32,7 +32,6 @@ arcade.draw_rectangle_filled(100, 400, 200, 50, arcade.color.ASH_GREY)
 arcade.draw_triangle_filled(30, 425, 170, 425, 105, 525, arcade.color.AMERICAN_ROSE)
 arcade.draw_circle_filled(105,525,10, (247, 244, 213))
 
-#draws boat
 
 
 #draws birds
