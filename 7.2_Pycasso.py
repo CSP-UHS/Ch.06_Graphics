@@ -36,9 +36,19 @@ for x in range (200, 405, 10):#VERTICAL LINES
     arcade.draw_rectangle_filled(x, 250, 5, 500, (255, 255, 255))
 
 
-for y in range (0, 10, 3):
-    arcade.draw_line(0, random(-3, 3), 5)
+arcade.draw_lrtb_rectangle_filled(0, 600, 10, 0, (0, 200, 0))
 
+for x in range (0, 600, 3):#GRASS 1
+    top=random.randint(-3,3)
+    top2=random.randint(10,13,)
+    arcade.draw_line(x, 0,x+top,top2,(0,100,0))
+
+for x in range (0, 600, 3):#GRASS 2
+    top=random.randint(-3,3)
+    top2=random.randint(10,13,)
+    arcade.draw_line(x, 0,x+top,top2,(0,150,0))
+
+arcade.draw_circle_filled(500, 500, 75, (255, 255, 0))
 
 
 arcade.finish_render()
