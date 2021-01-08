@@ -25,3 +25,4 @@ arcade.draw_arc_filled(400, 320, 120, 120, arcade.color.YELLOW, 30, 330)
 
 arcade.finish_render()
 arcade.run()
+
