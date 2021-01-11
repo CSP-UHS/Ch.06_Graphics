@@ -15,11 +15,16 @@ IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
 
-list = [0]
-tuple = (20, list, 20)
-for loop in range(20):
-    print(tuple)
-    list[0] += 1
-print(tuple)
-x = 5
-print(type(x))
+import arcade
+
+arcade.open_window(400, 800, "Joe Schmidt")
+arcade.set_background_color((255, 255, 255))
+arcade.start_render()
+
+arcade.draw_lrtb_rectangle_filled(0, 400, 400, 0, (50, 50, 50))     # splits screen into dark and light halves
+
+for loop in range(3):
+    arcade.draw_triangle_filled
+
+arcade.finish_render()
+arcade.run()

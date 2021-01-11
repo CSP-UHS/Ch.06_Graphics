@@ -21,12 +21,15 @@ for yoffset in range(0, 260, 40):
 
 arcade.draw_lrtb_rectangle_filled(20, 218, 280, 140, arcade.color.NAVY_BLUE)
 
-# arcade.draw_polygon_filled(((0, 0), (6.4, 0), (6.4, 3.2), (9.6, 3.2), (9.6, 0), (16, 0), (16, -3.2), (12.8, -3.2), ))
-
 arcade.draw_lrtb_rectangle_outline(20, 514, 280, 20, (0, 0, 0), 1)
 
-arcade.draw_polygon_filled(((20, 200), (400, 200), (100, 30), (200, 300), (320, 30)), (0,200,50))
-arcade.draw_polygon_outline(((20, 200), (400, 200), (100, 30), (200, 300), (320, 30)), (0,0,0))
+for y in range(156, 280, 28):
+    for x in range(30, 218, 33):
+        arcade.draw_polygon_filled(((x, y), (x + 4, y), (x + 6, y + 4), (x + 7, y), (x + 12, y), (x + 8, y - 2), (x + 10, y - 6), (x + 6, y - 4), (x + 2, y - 6), ( x + 3, y - 2)), (255, 255, 255))
+
+for y in range(170, 270, 28):
+    for x in range(46, 204, 33):
+        arcade.draw_polygon_filled(((x, y), (x + 4, y), (x + 6, y + 4), (x + 7, y), (x + 12, y), (x + 8, y - 2), (x + 10, y - 6), (x + 6, y - 4), (x + 2, y - 6), ( x + 3, y - 2)), (255, 255, 255))
 
 arcade.finish_render()
 arcade.run()
