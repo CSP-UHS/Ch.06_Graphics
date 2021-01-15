@@ -29,7 +29,7 @@ arcade.draw_rectangle_filled(200, 260, 40, 20, arcade.color.BLUSH, 135)
 
 arcade.draw_text("I love you. I know.", 45, 155, arcade.color.BRICK_RED, 20)
 
-arcade.draw_arc_filled(320, 320, 120, 120, arcade.color.YELLOW, 340, 20, 0, 128)
+arcade.draw_arc_filled(400,320,120,120,arcade.color.YELLOW,30,330)
 
 arcade.finish_render()
 

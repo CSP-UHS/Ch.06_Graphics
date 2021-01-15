@@ -14,7 +14,25 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
+arcade.open_window(450,800,"Daniel Mitchell Pycasso")
+arcade.set_background_color((0,0,0))
+arcade.start_render()
 
+#draw body
+arcade.draw_circle_filled(40,750,30,arcade.color.COOL_GREY,127)
+arcade.draw_circle_filled(410,750,30,arcade.color.COOL_GREY,127)
+arcade.draw_circle_filled(40,50,30,arcade.color.COOL_GREY,127)
+arcade.draw_circle_filled(410,50,30,arcade.color.COOL_GREY,127)
+arcade.draw_lrtb_rectangle_filled(10, 440, 750, 55,arcade.color.COOL_GREY)
+arcade.draw_lrtb_rectangle_filled(40, 410, 780, 20,arcade.color.COOL_GREY)
+arcade.draw_lrtb_rectangle_filled(35, 415, 735, 485,arcade.color.BLACK)
 
+for b_off in range(0,350,55): #draw Fbuttons
+    #arcade.draw_lrtb_rectangle_filled(45, 85, 475, 455, arcade.color.WHITE_SMOKE)
+    arcade.draw_rectangle_filled((60+ (b_off)), 460, 38, 15, arcade.color.WHITE_SMOKE)
 
+for b_off
 
+arcade.finish_render()
+arcade.run()
