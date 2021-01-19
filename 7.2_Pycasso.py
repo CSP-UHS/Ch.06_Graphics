@@ -14,7 +14,32 @@ Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Pull Request your file to your instructor.
 '''
+import arcade
 
+arcade.open_window(500, 500, "Tom Dau")
 
+arcade.start_render()
 
+arcade.draw_circle_filled(250, 250, 210, (255, 255, 255))               # White Border
+arcade.draw_circle_filled(250, 250, 200, (114, 137, 217))               # Blue Circle
 
+point_list = ((125,185),                                                # White outline
+              (175,150),
+              (325,150),
+              (375,185),
+              (350,325),
+              (275,350),
+              (225,350),
+              (150,325))
+arcade.draw_polygon_filled(point_list, (255, 255, 255))
+
+arcade.draw_ellipse_filled(250, 250, 200, 200, (114, 137, 217))
+arcade.draw_ellipse_filled(250, 350, 100, 150, (114, 137, 217))
+arcade.draw_ellipse_filled(250, 125, 125, 100, (114, 137, 217))
+arcade.draw_ellipse_filled(250, 250, 215, 175, (255, 255, 255))
+
+for eye in range(150, 275, 75):
+    arcade.draw_circle_filled(65+eye, 235, 25, (114, 137, 217))
+arcade.finish_render()
+
+arcade.run()
