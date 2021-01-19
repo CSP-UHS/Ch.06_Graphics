@@ -16,7 +16,7 @@ When you are finished Pull Request your file to your instructor.
 '''
 import arcade
 
-arcade.open_window(500, 500, "Tom Dau")
+arcade.open_window(500, 500, "Tom Dau")                                 # Discord Logo
 
 arcade.start_render()
 
