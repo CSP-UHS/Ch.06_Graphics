@@ -28,11 +28,17 @@ arcade.draw_lrtb_rectangle_filled(10, 440, 750, 55,arcade.color.COOL_GREY)
 arcade.draw_lrtb_rectangle_filled(40, 410, 780, 20,arcade.color.COOL_GREY)
 arcade.draw_lrtb_rectangle_filled(35, 415, 735, 485,arcade.color.BLACK)
 
-for b_off in range(0,350,55): #draw Fbuttons
+for b_off in range(0,350,70): #draw Fbuttons
     #arcade.draw_lrtb_rectangle_filled(45, 85, 475, 455, arcade.color.WHITE_SMOKE)
-    arcade.draw_rectangle_filled((60+ (b_off)), 460, 38, 15, arcade.color.WHITE_SMOKE)
+    arcade.draw_rectangle_filled((80+ (b_off)), 460, 45, 15, arcade.color.WHITE_SMOKE)
 
-for b_off
+for m_off in range(0,200,40):  #draws the buttons to the left of the dpad
+    for b_off in range(0,150,70):
+        arcade.draw_rectangle_filled((80 + (b_off)), (420-(m_off)), 45, 26, arcade.color.WHITE_SMOKE)
+
+for r_off in range(0 ,360 ,90):
+    arcade.draw_arc_filled(340, 400, 70, 70, arcade.color.WHITE_SMOKE, (45 + (r_off)), (135 + (r_off)))
 
 arcade.finish_render()
+
 arcade.run()
