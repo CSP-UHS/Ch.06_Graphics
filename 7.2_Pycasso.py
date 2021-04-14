@@ -26,7 +26,11 @@ arcade.draw_circle_filled(40,50,30,arcade.color.COOL_GREY,127)
 arcade.draw_circle_filled(410,50,30,arcade.color.COOL_GREY,127)
 arcade.draw_lrtb_rectangle_filled(10, 440, 750, 55,arcade.color.COOL_GREY)
 arcade.draw_lrtb_rectangle_filled(40, 410, 780, 20,arcade.color.COOL_GREY)
-arcade.draw_lrtb_rectangle_filled(35, 415, 735, 485,arcade.color.BLACK)
+arcade.draw_lrtb_rectangle_filled(35, 415, 735, 485,arcade.color.WHITE)
+arcade.draw_text("420 / 69",50,690,arcade.color.BLACK,25)
+arcade.draw_text("6.086956522",240,660,arcade.color.BLACK,25)
+arcade.draw_text("............................................",50,640,arcade.color.BLACK,25)
+arcade.draw_text("............................................",50,720,arcade.color.BLACK,25)
 
 for b_off in range(0,350,70): #draw Fbuttons
     #arcade.draw_lrtb_rectangle_filled(45, 85, 475, 455, arcade.color.WHITE_SMOKE)
@@ -36,9 +40,14 @@ for m_off in range(0,200,40):  #draws the buttons to the left of the dpad
     for b_off in range(0,150,70):
         arcade.draw_rectangle_filled((80 + (b_off)), (420-(m_off)), 45, 26, arcade.color.WHITE_SMOKE)
 
-for r_off in range(0 ,360 ,90):
-    arcade.draw_arc_filled(340, 400, 70, 70, arcade.color.WHITE_SMOKE, (45 + (r_off)), (135 + (r_off)))
+for m_off in range(0,200,40):  #draws the numpad
+    for b_off in range(0,150,70):
+        arcade.draw_rectangle_filled((150 + (b_off)), (220-(m_off)), 45, 26, arcade.color.BLACK)
+
+
+arcade.draw_circle_filled(330,380,50,arcade.color.WHITE_SMOKE)
+arcade.draw_rectangle_filled(330,380,100,10,arcade.color.COOL_GREY,45)
+arcade.draw_rectangle_filled(330,380,100,10,arcade.color.COOL_GREY,135)
 
 arcade.finish_render()
-
 arcade.run()
